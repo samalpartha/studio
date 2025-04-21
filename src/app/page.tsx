@@ -740,7 +740,7 @@ const chapters = [
     ],
   },
   {
-    id: '2',
+    id: '101',
     title: 'Math - Algebraic Expressions',
     category: 'Math',
     type: 'Normal',
@@ -1428,7 +1428,7 @@ const chapters = [
     ],
   },
   {
-    id: '3',
+    id: '2',
     title: 'Math - Word Problems',
     category: 'Math',
     type: 'Word',
@@ -1787,7 +1787,7 @@ const chapters = [
     ],
   },
   {
-    id: '4',
+    id: '3',
     title: 'Science - Basic Chemistry',
     category: 'Science',
     type: 'Normal',
@@ -2103,6 +2103,15 @@ const chapters = [
         type: 'free-form',
         correctAnswer: 'Solute',
       },
+    ],
+  },
+  {
+    id: '4',
+    title: 'Science - General Knowledge',
+    category: 'Science',
+    type: 'Normal',
+    explanation: 'Test your genreal knowldge of science',
+    questions: [
       {
         id: '51',
         text: 'Which gas do plants absorb from the atmosphere during photosynthesis?',
@@ -2575,7 +2584,7 @@ export default function Home() {
 
   const goToNextQuestion = () => {
     const questions = getQuestionsForChapter(selectedChapter);
-    if (questionIndex &lt; selectedChapter.questions.length - 1) {
+    if (questionIndex < selectedChapter.questions.length - 1) {
       setQuestionIndex(questionIndex + 1);
       setCurrentQuestion(selectedChapter.questions[questionIndex + 1]);
       setStudentAnswer('');
@@ -2735,5 +2744,3 @@ export default function Home() {
     </SidebarProvider>
   );
 }
-
-
