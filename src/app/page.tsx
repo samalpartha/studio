@@ -1385,10 +1385,10 @@ const chapters = [
       },
       {
         id: '95',
-        text: 'Solve the inequality for x: 3x + 5 < 14',
+        text: 'Solve the inequality for x: 3x + 5 &lt; 14',
         category: 'Math',
         type: 'free-form',
-        correctAnswer: 'x < 3',
+        correctAnswer: 'x &lt; 3',
       },
       {
         id: '96',
@@ -2103,15 +2103,6 @@ const chapters = [
         type: 'free-form',
         correctAnswer: 'Solute',
       },
-    ],
-  },
-  {
-    id: '5',
-    title: 'Science - General Science',
-    category: 'Science',
-    type: 'Normal',
-    explanation: 'General Science questions',
-    questions: [
       {
         id: '51',
         text: 'Which gas do plants absorb from the atmosphere during photosynthesis?',
@@ -2462,67 +2453,75 @@ const chapters = [
         type: 'free-form',
         correctAnswer: 'Winter, Spring, Summer, Autumn',
       },
-    ],
-  },
-  {
-    id: '6',
-    title: 'Science - Geometry Basics',
-    category: 'Science',
-    type: 'Normal',
-    explanation: 'Fundamentals of shapes, angles, and spatial relationships.',
-    questions: [
       {
-        id: '10',
-        text: 'How many degrees are in a right angle?',
+        id: '101',
+        text: 'Which part of the body helps us think?',
         category: 'Science',
         type: 'free-form',
-        correctAnswer: '90',
+        correctAnswer: 'Brain',
       },
       {
-        id: '11',
-        text: 'What is the area of a rectangle with length 5 and width 3?',
+        id: '102',
+        text: 'What do we call a baby mouse?',
         category: 'Science',
         type: 'free-form',
-        correctAnswer: '15',
+        correctAnswer: 'Pup',
       },
-      {
-        id: '12',
-        text: 'Which shape has the most sides?',
-        category: 'Science',
-        type: 'multiple-choice',
-        options: ['Triangle', 'Square', 'Pentagon', 'Octagon'],
-        correctAnswer: 'Octagon',
-      },
-    ],
-  },
-  {
-    id: '7',
-    title: 'Science - Ecology',
-    category: 'Science',
-    type: 'Normal',
-    explanation: 'Basic concepts of ecosystems, food chains, and environmental interactions.',
-    questions: [
-      {
-        id: '13',
-        text: 'What is the primary source of energy for most ecosystems?',
-        category: 'Science',
-        type: 'multiple-choice',
-        options: ['Sun', 'Wind', 'Water', 'Geothermal'],
-        correctAnswer: 'Sun',
-      },
-      {
-        id: '14',
-        text: 'Name a primary consumer in a typical food chain.',
+       {
+        id: '103',
+        text: 'What is the name of a group of fish?',
         category: 'Science',
         type: 'free-form',
-        correctAnswer: 'Herbivore',
+        correctAnswer: 'School',
       },
-      {
-        id: '15',
-        text: 'What process do plants use to convert sunlight into energy?',
+       {
+        id: '104',
+        text: 'What is the hardest substance in the human body?',
         category: 'Science',
         type: 'free-form',
-        correctAnswer: 'Photosynthesis',
+        correctAnswer: 'Enamel',
+      },
+       {
+        id: '105',
+        text: 'Do butterflies have more than 4 legs?',
+        category: 'Science',
+        type: 'free-form',
+        correctAnswer: 'Yes',
+      },
+       {
+        id: '106',
+        text: 'Do all birds fly?',
+        category: 'Science',
+        type: 'free-form',
+        correctAnswer: 'No',
+      },
+       {
+        id: '107',
+        text: 'What part of the body pumps blood?',
+        category: 'Science',
+        type: 'free-form',
+        correctAnswer: 'Heart',
+      },
+      {
+        id: '108',
+        text: 'Are humans mammals?',
+        category: 'Science',
+        type: 'free-form',
+        correctAnswer: 'Yes',
+      },
+      {
+        id: '109',
+        text: 'What is the largest organ in the human body?',
+        category: 'Science',
+        type: 'free-form',
+        correctAnswer: 'Skin',
+      },
+      {
+        id: '110',
+        text: 'How many arms does an octopus have?',
+        category: 'Science',
+        type: 'free-form',
+        correctAnswer: 'Eight',
       },
     ],
   },
@@ -2576,9 +2575,9 @@ export default function Home() {
 
   const goToNextQuestion = () => {
     const questions = getQuestionsForChapter(selectedChapter);
-    if (questionIndex < questions.length - 1) {
+    if (questionIndex &lt; selectedChapter.questions.length - 1) {
       setQuestionIndex(questionIndex + 1);
-      setCurrentQuestion(questions[questionIndex + 1]);
+      setCurrentQuestion(selectedChapter.questions[questionIndex + 1]);
       setStudentAnswer('');
       setShowHint(false);
     } else {
@@ -2736,3 +2735,5 @@ export default function Home() {
     </SidebarProvider>
   );
 }
+
+
