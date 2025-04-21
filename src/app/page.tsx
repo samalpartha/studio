@@ -1,4 +1,3 @@
-
 'use client';
 
 import React, {useState} from 'react';
@@ -42,6 +41,21 @@ const chapters = [
         options: ['50', '60', '70', '80'],
         correctAnswer: '60',
       },
+      {
+        id: '2',
+        text: 'Which of the following is a composite number?',
+        category: 'Math',
+        type: 'multiple-choice',
+        options: ['2', '3', '5', '9'],
+        correctAnswer: '9',
+      },
+      {
+        id: '3',
+        text: 'What is the value of pi to two decimal places?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '3.14',
+      },
     ],
   },
   {
@@ -50,11 +64,25 @@ const chapters = [
     explanation: 'Simplifying and evaluating algebraic expressions.',
     questions: [
       {
-        id: '2',
+        id: '4',
         text: 'Solve for x: 2x + 5 = 15',
         category: 'Math',
         type: 'free-form',
         correctAnswer: '5',
+      },
+      {
+        id: '5',
+        text: 'Simplify: 3(a + 2b) - a + b',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '2a + 7b',
+      },
+      {
+        id: '6',
+        text: 'If x = 3 and y = 4, what is the value of x^2 + y^2?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '25',
       },
     ],
   },
@@ -64,12 +92,85 @@ const chapters = [
     explanation: 'Understanding of atoms, molecules, and basic chemical reactions.',
     questions: [
       {
-        id: '3',
+        id: '7',
         text: 'What is the chemical symbol for water?',
         category: 'Science',
         type: 'multiple-choice',
         options: ['H2O', 'CO2', 'O2', 'NaCl'],
         correctAnswer: 'H2O',
+      },
+      {
+        id: '8',
+        text: 'Which element is most abundant in Earth’s atmosphere?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Oxygen', 'Nitrogen', 'Carbon Dioxide', 'Hydrogen'],
+        correctAnswer: 'Nitrogen',
+      },
+      {
+        id: '9',
+        text: 'What is the pH of a neutral solution?',
+        category: 'Science',
+        type: 'free-form',
+        correctAnswer: '7',
+      },
+    ],
+  },
+  {
+    id: '4',
+    title: 'Geometry Basics',
+    explanation: 'Fundamentals of shapes, angles, and spatial relationships.',
+    questions: [
+      {
+        id: '10',
+        text: 'How many degrees are in a right angle?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '90',
+      },
+      {
+        id: '11',
+        text: 'What is the area of a rectangle with length 5 and width 3?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '15',
+      },
+      {
+        id: '12',
+        text: 'Which shape has the most sides?',
+        category: 'Math',
+        type: 'multiple-choice',
+        options: ['Triangle', 'Square', 'Pentagon', 'Octagon'],
+        correctAnswer: 'Octagon',
+      },
+    ],
+  },
+  {
+    id: '5',
+    title: 'Ecology',
+    explanation: 'Basic concepts of ecosystems, food chains, and environmental interactions.',
+    questions: [
+      {
+        id: '13',
+        text: 'What is the primary source of energy for most ecosystems?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Sun', 'Wind', 'Water', 'Geothermal'],
+        correctAnswer: 'Sun',
+      },
+      {
+        id: '14',
+        text: 'Name a primary consumer in a typical food chain.',
+        category: 'Science',
+        type: 'free-form',
+        correctAnswer: 'Herbivore',
+      },
+      {
+        id: '15',
+        text: 'What process do plants use to convert sunlight into energy?',
+        category: 'Science',
+        type: 'free-form',
+        correctAnswer: 'Photosynthesis',
       },
     ],
   },
