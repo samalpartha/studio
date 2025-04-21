@@ -30,7 +30,9 @@ import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/co
 const chapters = [
   {
     id: '1',
-    title: 'Number Systems',
+    title: 'Math - Number Systems',
+    category: 'Math',
+    type: 'Normal',
     explanation: 'Understanding different types of numbers and their properties.',
     questions: [
       {
@@ -739,7 +741,9 @@ const chapters = [
   },
   {
     id: '2',
-    title: 'Algebraic Expressions',
+    title: 'Math - Algebraic Expressions',
+    category: 'Math',
+    type: 'Normal',
     explanation: 'Simplifying and evaluating algebraic expressions.',
     questions: [
       {
@@ -1425,7 +1429,368 @@ const chapters = [
   },
   {
     id: '3',
-    title: 'Basic Chemistry',
+    title: 'Math - Word Problems',
+    category: 'Math',
+    type: 'Word',
+    explanation: 'Applying math skills to solve real-world problems.',
+    questions: [
+      {
+        id: '1',
+        text: 'John has 15 apples. He gives 7 apples to his friend. How many apples does John have left?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '8',
+      },
+      {
+        id: '2',
+        text: 'A farmer has 24 cows. If he divides them equally into 3 groups, how many cows are in each group?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '8',
+      },
+      {
+        id: '3',
+        text: 'Sarah buys a book for $8 and a pen for $3. How much money does she spend in total?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '11',
+      },
+      {
+        id: '4',
+        text: 'A train travels 120 miles in 2 hours. What is its average speed?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '60',
+      },
+      {
+        id: '5',
+        text: 'A rectangle has a length of 10 cm and a width of 6 cm. What is its area?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '60',
+      },
+      {
+        id: '6',
+        text: 'Tom has 3 bags of marbles. Each bag contains 9 marbles. How many marbles does Tom have in all?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '27',
+      },
+      {
+        id: '7',
+        text: 'A pizza is cut into 8 slices. If you eat 3 slices, how many slices are left?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '5',
+      },
+      {
+        id: '8',
+        text: 'A school has 150 students. If 60 students are girls, how many students are boys?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '90',
+      },
+      {
+        id: '9',
+        text: 'A baker makes 40 cookies. He sells 28 cookies. How many cookies are left?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '12',
+      },
+      {
+        id: '10',
+        text: 'A garden has 5 rows of flowers. Each row has 12 flowers. How many flowers are in the garden?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '60',
+      },
+      {
+        id: '11',
+        text: 'If a shirt costs $25 and you pay with a $50 bill, how much change do you receive?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '25',
+      },
+      {
+        id: '12',
+        text: 'A library has 1000 books. 345 books are borrowed. How many books are left in the library?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '655',
+      },
+      {
+        id: '13',
+        text: 'A movie starts at 7:30 PM and ends at 9:15 PM. How long is the movie?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '1 hour 45 minutes',
+      },
+      {
+        id: '14',
+        text: 'If you drive 300 miles at a speed of 60 mph, how long will the trip take?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '5',
+      },
+      {
+        id: '15',
+        text: 'A store sells a product for $45, which includes a 20% markup. What was the original cost of the product?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '37.5',
+      },
+      {
+        id: '16',
+        text: 'A class has 25 students. Each student needs 2 pencils. How many pencils are needed in total?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '50',
+      },
+      {
+        id: '17',
+        text: 'A farmer plants 8 rows of apple trees. Each row has 15 trees. How many apple trees did he plant?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '120',
+      },
+      {
+        id: '18',
+        text: 'A water tank contains 500 liters of water. 185 liters are used. How many liters are left in the tank?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '315',
+      },
+      {
+        id: '19',
+        text: 'A store sells a TV for $350 and a DVD player for $75. How much will both items cost?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '425',
+      },
+      {
+        id: '20',
+        text: 'A car travels 450 km in 5 hours. What is the average speed of the car?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '90',
+      },
+      {
+        id: '21',
+        text: 'John has 25 marbles, and Tom has 18 marbles. How many marbles do they have altogether?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '43',
+      },
+      {
+        id: '22',
+        text: 'Sarah has 35 stickers. She gives 12 stickers to her friend. How many stickers does Sarah have left?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '23',
+      },
+      {
+        id: '23',
+        text: 'A baker makes 48 cupcakes. She divides them equally into 6 boxes. How many cupcakes are in each box?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '8',
+      },
+      {
+        id: '24',
+        text: 'A train travels 240 miles in 4 hours. What is the average speed of the train?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '60',
+      },
+      {
+        id: '25',
+        text: 'A class has 30 students. If 2/5 of the students are girls, how many girls are there in the class?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '12',
+      },
+      {
+        id: '26',
+        text: 'If one apple costs $0.75, how much will 8 apples cost?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '6',
+      },
+      {
+        id: '27',
+        text: 'A garden is 15 meters long and 8 meters wide. What is the perimeter of the garden?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '46',
+      },
+      {
+        id: '28',
+        text: 'A pizza is cut into 12 slices. If you eat 1/4 of the pizza, how many slices did you eat?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '3',
+      },
+      {
+        id: '29',
+        text: 'A student scores 80 out of 100 on a test. What percentage did the student get?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '80',
+      },
+      {
+        id: '30',
+        text: 'A store is selling pencils for $0.50 each. If you buy 6 pencils, how much will it cost?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '3',
+      },
+      {
+        id: '31',
+        text: 'A school has 450 students. If 1/3 of the students are in the primary section, how many students are in the primary section?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '150',
+      },
+      {
+        id: '32',
+        text: 'A book has 320 pages. If you read 40 pages each day, how many days will it take to finish the book?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '8',
+      },
+      {
+        id: '33',
+        text: 'A box contains 36 chocolates. If 4 children share the chocolates equally, how many chocolates does each child get?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '9',
+      },
+      {
+        id: '34',
+        text: 'If a train travels at a speed of 75 miles per hour, how far will it travel in 3 hours?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '225',
+      },
+      {
+        id: '35',
+        text: 'A rectangular garden is 20 feet long and 12 feet wide. What is its area?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '240',
+      },
+      {
+        id: '36',
+        text: 'A group of friends went to the movies. Tickets cost $8.50 each, and they bought 5 tickets. What was the total cost?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '42.5',
+      },
+      {
+        id: '37',
+        text: 'A store sells apples for $1.25 each. If you buy 10 apples, how much will it cost?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '12.5',
+      },
+      {
+        id: '38',
+        text: 'A bus travels 180 miles in 3 hours. What is its average speed?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '60',
+      },
+      {
+        id: '39',
+        text: 'A school has 600 students, and 45% of them are girls. How many boys are there in the school?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '330',
+      },
+      {
+        id: '40',
+        text: 'If you save $25 each week, how much money will you save in 12 weeks?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '300',
+      },
+      {
+        id: '41',
+        text: 'The price of a pen is $2.00 and the price of a book is $15. If you buy one pen and one book, what is the total cost?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '17',
+      },
+      {
+        id: '42',
+        text: 'John has 34 pencils and Peter has 47 pencils. How many more pencils does Peter have than John?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '13',
+      },
+      {
+        id: '43',
+        text: 'A teacher divides 96 students into groups of 8. How many groups are there?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '12',
+      },
+       {
+        id: '44',
+        text: 'A shopkeeper sells 340 apples, 234 bananas and 121 mangoes in a day. How many fruits were sold in a day?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '695',
+      },
+       {
+        id: '45',
+        text: 'There are 1275 red roses in a garden, 2345 yellow roses and 987 white roses. How many roses are there in all?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '4607',
+      },
+       {
+        id: '46',
+        text: 'John buys a toy for $25.00, a book for $35.00 and a pen for $2.00 How much money did he spend altogether?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '62',
+      },
+       {
+        id: '47',
+        text: 'A class library has 234 story books, 145 science books and 23 history books. How many books are there in the class library?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '402',
+      },
+       {
+        id: '48',
+        text: 'A school has 1234 boys and 1345 girls. How many students are there in the school?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '2579',
+      },
+      {
+        id: '49',
+        text: 'An Ice cream vendor sold 23 ice creams on Monday, 45 ice creams on Tuesday and 2 ice creams on Wednesday. How many ice creams did the vendor sell in 3 days?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '70',
+      },
+      {
+        id: '50',
+        text: 'Peter buys a coke for $3.45, and a sandwich for $7.90. If he gives the shopkeeper a $20 note, how much change does he get back?',
+        category: 'Math',
+        type: 'free-form',
+        correctAnswer: '8.65',
+      },
+    ],
+  },
+  {
+    id: '4',
+    title: 'Science - Basic Chemistry',
+    category: 'Science',
+    type: 'Normal',
     explanation: 'Understanding of atoms, molecules, and basic chemical reactions.',
     questions: [
       {
@@ -1738,6 +2103,15 @@ const chapters = [
         type: 'free-form',
         correctAnswer: 'Solute',
       },
+    ],
+  },
+  {
+    id: '5',
+    title: 'Science - General Science',
+    category: 'Science',
+    type: 'Normal',
+    explanation: 'General Science questions',
+    questions: [
       {
         id: '51',
         text: 'Which gas do plants absorb from the atmosphere during photosynthesis?',
@@ -2091,28 +2465,30 @@ const chapters = [
     ],
   },
   {
-    id: '4',
-    title: 'Geometry Basics',
+    id: '6',
+    title: 'Science - Geometry Basics',
+    category: 'Science',
+    type: 'Normal',
     explanation: 'Fundamentals of shapes, angles, and spatial relationships.',
     questions: [
       {
         id: '10',
         text: 'How many degrees are in a right angle?',
-        category: 'Math',
+        category: 'Science',
         type: 'free-form',
         correctAnswer: '90',
       },
       {
         id: '11',
         text: 'What is the area of a rectangle with length 5 and width 3?',
-        category: 'Math',
+        category: 'Science',
         type: 'free-form',
         correctAnswer: '15',
       },
       {
         id: '12',
         text: 'Which shape has the most sides?',
-        category: 'Math',
+        category: 'Science',
         type: 'multiple-choice',
         options: ['Triangle', 'Square', 'Pentagon', 'Octagon'],
         correctAnswer: 'Octagon',
@@ -2120,8 +2496,10 @@ const chapters = [
     ],
   },
   {
-    id: '5',
-    title: 'Ecology',
+    id: '7',
+    title: 'Science - Ecology',
+    category: 'Science',
+    type: 'Normal',
     explanation: 'Basic concepts of ecosystems, food chains, and environmental interactions.',
     questions: [
       {
@@ -2158,7 +2536,11 @@ export default function Home() {
   const [showHint, setShowHint] = useState(false);
   const [hint, setHint] = useState('');
   const {toast} = useToast();
-  const [explanationOpen, setExplanationOpen] = React.useState(false)
+  const [explanationOpen, setExplanationOpen] = React.useState(false);
+
+  const getQuestionsForChapter = (chapter: any) => {
+    return chapter.questions;
+  };
 
   const validateAnswer = () => {
     if (studentAnswer.trim() === currentQuestion.correctAnswer) {
@@ -2193,9 +2575,10 @@ export default function Home() {
   };
 
   const goToNextQuestion = () => {
-    if (questionIndex < selectedChapter.questions.length - 1) {
+    const questions = getQuestionsForChapter(selectedChapter);
+    if (questionIndex < questions.length - 1) {
       setQuestionIndex(questionIndex + 1);
-      setCurrentQuestion(selectedChapter.questions[questionIndex + 1]);
+      setCurrentQuestion(questions[questionIndex + 1]);
       setStudentAnswer('');
       setShowHint(false);
     } else {
@@ -2207,9 +2590,10 @@ export default function Home() {
   };
 
   const goToPreviousQuestion = () => {
+    const questions = getQuestionsForChapter(selectedChapter);
     if (questionIndex > 0) {
       setQuestionIndex(questionIndex - 1);
-      setCurrentQuestion(selectedChapter.questions[questionIndex - 1]);
+      setCurrentQuestion(questions[questionIndex - 1]);
       setStudentAnswer('');
       setShowHint(false);
     } else {
@@ -2219,7 +2603,6 @@ export default function Home() {
       });
     }
   };
-
 
   return (
     <SidebarProvider>
@@ -2282,7 +2665,7 @@ export default function Home() {
             </CardHeader>
             <CardContent className="flex-1">
               <div className="mb-4">
-                <p className="text-lg font-semibold">Question {questionIndex + 1} / {selectedChapter.questions.length}:</p>
+                <p className="text-lg font-semibold">Question {questionIndex + 1} / {getQuestionsForChapter(selectedChapter).length}:</p>
                 <p className="text-md">{currentQuestion.text}</p>
               </div>
 
@@ -2322,7 +2705,7 @@ export default function Home() {
               <Button onClick={goToPreviousQuestion} disabled={questionIndex === 0}>
                 Previous
               </Button>
-              <Button onClick={goToNextQuestion} disabled={questionIndex === selectedChapter.questions.length - 1}>
+              <Button onClick={goToNextQuestion} disabled={questionIndex === getQuestionsForChapter(selectedChapter).length - 1}>
                 Next
               </Button>
             </CardFooter>
