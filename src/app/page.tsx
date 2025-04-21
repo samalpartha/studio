@@ -44,6 +44,7 @@ const chapters = [
         options: ['50', '60', '70', '80'],
         correctAnswer: '60',
         gradeLevel: 5,
+        hint: 'Prime numbers are only divisible by 1 and themselves.',
       },
       {
         id: '2',
@@ -53,14 +54,17 @@ const chapters = [
         options: ['2', '3', '5', '9'],
         correctAnswer: '9',
         gradeLevel: 4,
+        hint: 'Composite numbers have more than two factors.',
       },
       {
         id: '3',
         text: 'What is the value of pi to two decimal places?',
         category: 'Math',
-        type: 'free-form',
+        type: 'multiple-choice',
+        options: ['3.14', '3.16', '3.17', '3.18'],
         correctAnswer: '3.14',
         gradeLevel: 5,
+        hint: 'Pi is a constant representing the ratio of a circle\'s circumference to its diameter.',
       },
       {
         id: '4',
@@ -70,6 +74,7 @@ const chapters = [
         options: ['x = 2', 'x = 5', 'x = 10', 'x = 20'],
         correctAnswer: 'x = 5',
         gradeLevel: 4,
+        hint: 'Subtract 5 from both sides, then divide by 2.',
       },
       {
         id: '5',
@@ -79,6 +84,7 @@ const chapters = [
         options: ['2a + 7b', '3a + 6b', '4a + 8b', '5a + 9b'],
         correctAnswer: '2a + 7b',
         gradeLevel: 5,
+        hint: 'Distribute the 3, then combine like terms.',
       },
       {
         id: '6',
@@ -88,6 +94,7 @@ const chapters = [
         options: ['7', '14', '25', '49'],
         correctAnswer: '25',
         gradeLevel: 5,
+        hint: 'Calculate x squared and y squared, then add them together.',
       },
       {
         id: '7',
@@ -97,6 +104,7 @@ const chapters = [
         options: ['24', '25', '27', '29'],
         correctAnswer: '29',
         gradeLevel: 4,
+        hint: 'Check numbers greater than 23 for divisibility by smaller primes.',
       },
       {
         id: '8',
@@ -106,6 +114,7 @@ const chapters = [
         options: ['15', '20', '30', '45'],
         correctAnswer: '30',
         gradeLevel: 5,
+        hint: 'Convert 15% to a decimal and multiply by 200.',
       },
       {
         id: '9',
@@ -115,6 +124,7 @@ const chapters = [
         options: ['10', '12', '14', '16'],
         correctAnswer: '12',
         gradeLevel: 4,
+        hint: 'Find a number that, when multiplied by itself, equals 144.',
       },
       {
         id: '10',
@@ -124,6 +134,7 @@ const chapters = [
         options: ['40', '50', '60', '70'],
         correctAnswer: '60',
         gradeLevel: 5,
+        hint: 'Divide the total distance by the total time.',
       },
       {
         id: '11',
@@ -133,6 +144,7 @@ const chapters = [
         options: ['3', '5', '7', '9'],
         correctAnswer: '7',
         gradeLevel: 4,
+        hint: 'Add 7 to both sides, then divide by 3.',
       },
       {
         id: '12',
@@ -142,6 +154,7 @@ const chapters = [
         options: ['154', '22', '44', '49'],
         correctAnswer: '154',
         gradeLevel: 5,
+        hint: 'Use the formula for the area of a circle: πr^2.',
       },
       {
         id: '13',
@@ -151,6 +164,7 @@ const chapters = [
         options: ['21', '49', '243', '343'],
         correctAnswer: '343',
         gradeLevel: 5,
+        hint: 'Multiply 7 by itself three times.',
       },
       {
         id: '14',
@@ -160,6 +174,7 @@ const chapters = [
         options: ['3', '5', '7', '9'],
         correctAnswer: '7',
         gradeLevel: 4,
+        hint: 'Divide both sides by 5.',
       },
       {
         id: '15',
@@ -169,6 +184,7 @@ const chapters = [
         options: ['3628800', '362800', '362880', '36288000'],
         correctAnswer: '3628800',
         gradeLevel: 5,
+        hint: 'Multiply all integers from 1 to 10.',
       },
       {
         id: '16',
@@ -178,6 +194,7 @@ const chapters = [
         options: ['4', '8', '12', '16'],
         correctAnswer: '16',
         gradeLevel: 4,
+        hint: 'Subtract 8 from both sides, then multiply by 4.',
       },
       {
         id: '17',
@@ -187,6 +204,7 @@ const chapters = [
         options: ['22', '44', '88', '176'],
         correctAnswer: '88',
         gradeLevel: 5,
+        hint: 'Use the formula for the circumference of a circle: πd.',
       },
       {
         id: '18',
@@ -196,6 +214,7 @@ const chapters = [
         options: ['-17', '17', '0', '1'],
         correctAnswer: '-17',
         gradeLevel: 5,
+        hint: 'Calculate 4 cubed and 3 to the power of 4, then subtract.',
       },
       {
         id: '19',
@@ -205,6 +224,7 @@ const chapters = [
         options: ['$5', '$15', '$25', '$50'],
         correctAnswer: '$25',
         gradeLevel: 5,
+        hint: 'Calculate 5% of $500.',
       },
       {
         id: '20',
@@ -214,6 +234,7 @@ const chapters = [
         options: ['$36', '$37.5', '$40', '$42.5'],
         correctAnswer: '$37.5',
         gradeLevel: 5,
+        hint: 'Let x be the original cost, then x + 0.2x = 45.',
       },
       {
         id: '21',
@@ -223,6 +244,7 @@ const chapters = [
         options: ['10', '12', '14', '16'],
         correctAnswer: '14',
         gradeLevel: 5,
+        hint: 'Follow the order of operations (PEMDAS/BODMAS).',
       },
       {
         id: '22',
@@ -232,6 +254,7 @@ const chapters = [
         options: ['20', '30', '40', '50'],
         correctAnswer: '40',
         gradeLevel: 4,
+        hint: 'The sum of angles in a triangle is 180°.',
       },
       {
         id: '23',
@@ -241,6 +264,7 @@ const chapters = [
         options: ['50', '60', '70', '80'],
         correctAnswer: '60',
         gradeLevel: 5,
+        hint: 'Follow the order of operations (PEMDAS/BODMAS).',
       },
       {
         id: '24',
@@ -250,6 +274,7 @@ const chapters = [
         options: ['36', '63', '72', '81'],
         correctAnswer: '81',
         gradeLevel: 4,
+        hint: 'The area of a square is side × side.',
       },
       {
         id: '25',
@@ -259,6 +284,7 @@ const chapters = [
         options: ['28.26', '36', '37.68', '113.1'],
         correctAnswer: '113.1',
         gradeLevel: 5,
+        hint: 'Area of a circle = πr².',
       },
       {
         id: '26',
@@ -268,6 +294,7 @@ const chapters = [
         options: ['0.25', '0.333', '0.416', '0.5'],
         correctAnswer: '0.333',
         gradeLevel: 5,
+        hint: 'Probability = (Number of blue marbles) / (Total number of marbles).',
       },
       {
         id: '27',
@@ -277,6 +304,7 @@ const chapters = [
         options: ['12', '16', '32', '64'],
         correctAnswer: '64',
         gradeLevel: 4,
+        hint: 'Volume of a cube = side × side × side.',
       },
       {
         id: '28',
@@ -286,6 +314,7 @@ const chapters = [
         options: ['3', '4', '5', '6'],
         correctAnswer: '5',
         gradeLevel: 5,
+        hint: 'Perimeter = 2(length + width). Solve for width.',
       },
       {
         id: '29',
@@ -295,6 +324,7 @@ const chapters = [
         options: ['3', '4', '5', '6'],
         correctAnswer: '5',
         gradeLevel: 5,
+        hint: 'Time = Distance / Speed.',
       },
       {
         id: '30',
@@ -304,6 +334,7 @@ const chapters = [
         options: ['24', '28', '30', '32'],
         correctAnswer: '30',
         gradeLevel: 4,
+        hint: 'The difference between consecutive numbers increases by 2 each time.',
       },
       {
         id: '31',
@@ -313,6 +344,7 @@ const chapters = [
         options: ['2', '3', '4', '5'],
         correctAnswer: '4',
         gradeLevel: 4,
+        hint: 'Subtract 2 from both sides, then divide by 4.',
       },
       {
         id: '32',
@@ -322,6 +354,7 @@ const chapters = [
         options: ['$2.00', '$2.25', '$2.50', '$2.75'],
         correctAnswer: '$2.25',
         gradeLevel: 5,
+        hint: 'Divide the total cost by the number of notebooks.',
       },
       {
         id: '33',
@@ -331,6 +364,7 @@ const chapters = [
         options: ['24', '48', '96', '192'],
         correctAnswer: '48',
         gradeLevel: 5,
+        hint: 'Area of a triangle = 0.5 × base × height.',
       },
       {
         id: '34',
@@ -340,6 +374,7 @@ const chapters = [
         options: ['$1800', '$2400', '$3000', '$3600'],
         correctAnswer: '$3600',
         gradeLevel: 5,
+        hint: 'Calculate the total number of months in 2 years, then multiply by the savings per month.',
       },
       {
         id: '35',
@@ -349,6 +384,7 @@ const chapters = [
         options: ['45', '50', '55', '60'],
         correctAnswer: '55',
         gradeLevel: 5,
+        hint: 'Use the formula for the sum of an arithmetic series: n(n+1)/2',
       },
       {
         id: '36',
@@ -358,6 +394,7 @@ const chapters = [
         options: ['$60', '$64', '$68', '$72'],
         correctAnswer: '$68',
         gradeLevel: 5,
+        hint: 'Calculate 15% of $80, then subtract from the original price.',
       },
       {
         id: '37',
@@ -367,6 +404,7 @@ const chapters = [
         options: ['-27', '-9', '9', '27'],
         correctAnswer: '-27',
         gradeLevel: 5,
+        hint: 'Multiply -3 by itself three times.',
       },
       {
         id: '38',
@@ -376,6 +414,7 @@ const chapters = [
         options: ['3/5', '9/20', '1/2', '1/45'],
         correctAnswer: '9/20',
         gradeLevel: 5,
+        hint: 'Write 45% as a fraction over 100 and simplify.',
       },
       {
         id: '39',
@@ -385,6 +424,7 @@ const chapters = [
         options: ['50', '55', '60', '65'],
         correctAnswer: '60',
         gradeLevel: 5,
+        hint: 'Divide the score by the total marks and multiply by 100.',
       },
       {
         id: '40',
@@ -394,6 +434,7 @@ const chapters = [
         options: ['0.14', '0.48', '4.8', '48'],
         correctAnswer: '0.48',
         gradeLevel: 5,
+        hint: 'Multiply the two numbers as if they are whole numbers, then adjust the decimal place.',
       },
       {
         id: '41',
@@ -403,6 +444,7 @@ const chapters = [
         options: ['73.64', '80.23', '83.64', '92'],
         correctAnswer: '83.64',
         gradeLevel: 5,
+        hint: 'Average speed is total distance divided by total time. Calculate the total travel time first.',
       },
       {
         id: '42',
@@ -412,6 +454,7 @@ const chapters = [
         options: ['360.24', '400', '462.24', '500'],
         correctAnswer: '462.24',
         gradeLevel: 5,
+        hint: 'First calculate the discount amount and subtract it from the listed price. Then calculate the sales tax on the discounted price and add it to find the final price.',
       },
       {
         id: '43',
@@ -421,6 +464,7 @@ const chapters = [
         options: ['120', '160', '180', '200'],
         correctAnswer: '180',
         gradeLevel: 5,
+        hint: 'Distance is equal to speed multiplied by time.',
       },
       {
         id: '44',
@@ -430,6 +474,7 @@ const chapters = [
         options: ['226.19', '340', '400', '120'],
         correctAnswer: '226.19',
         gradeLevel: 5,
+        hint: 'The volume of a cylinder is πr^2h.',
       },
       {
         id: '45',
@@ -439,6 +484,7 @@ const chapters = [
         options: ['2', '4', '6', '8'],
         correctAnswer: '6',
         gradeLevel: 5,
+        hint: 'Set up a proportion to solve for the unknown quantity of flour.',
       },
       {
         id: '46',
@@ -448,6 +494,7 @@ const chapters = [
         options: ['25', '50', '75', '100'],
         correctAnswer: '100',
         gradeLevel: 5,
+        hint: 'First, find the length of one side by taking the square root of the area. Then multiply by 4 to find the perimeter.',
       },
       {
         id: '47',
@@ -457,6 +504,7 @@ const chapters = [
         options: ['3900', '4014.68', '4100', '4200'],
         correctAnswer: '4014.68',
         gradeLevel: 5,
+        hint: 'Use the formula for compound interest: A = P(1 + r/n)^(nt).',
       },
       {
         id: '48',
@@ -466,6 +514,7 @@ const chapters = [
         options: ['3', '4', '5', '6'],
         correctAnswer: '5',
         gradeLevel: 5,
+        hint: 'Combine like terms by moving all x terms to one side and constants to the other.',
       },
       {
         id: '49',
@@ -475,6 +524,7 @@ const chapters = [
         options: ['13', '23', '33', '43'],
         correctAnswer: '23',
         gradeLevel: 5,
+        hint: 'Follow the order of operations (PEMDAS/BODMAS).',
       },
       {
         id: '50',
@@ -484,6 +534,7 @@ const chapters = [
         options: ['1', '2', '3', '4'],
         correctAnswer: '1',
         gradeLevel: 5,
+        hint: 'Distribute the 3, then combine like terms to solve for y.',
       },
       {
         id: '51',
@@ -493,6 +544,7 @@ const chapters = [
         options: ['15', '20', '25', '30'],
         correctAnswer: '25',
         gradeLevel: 5,
+        hint: 'Percent increase = ((New Value - Old Value) / Old Value) * 100',
       },
       {
         id: '52',
@@ -502,6 +554,7 @@ const chapters = [
         options: ['24', '36', '48', '60'],
         correctAnswer: '36',
         gradeLevel: 5,
+        hint: 'Find the least common multiple of the two numbers.',
       },
       {
         id: '53',
@@ -511,6 +564,7 @@ const chapters = [
         options: ['4', '8', '16', '64'],
         correctAnswer: '64',
         gradeLevel: 5,
+        hint: 'When dividing exponential terms with the same base, subtract the exponents.',
       },
       {
         id: '54',
@@ -520,6 +574,7 @@ const chapters = [
         options: ['200', '225', '250', '275'],
         correctAnswer: '225',
         gradeLevel: 5,
+        hint: 'Calculate 25% of the list price and then subtract it from the list price.',
       },
       {
         id: '55',
@@ -529,6 +584,7 @@ const chapters = [
         options: ['1/2', '1/3', '1/4', '1/6'],
         correctAnswer: '1/6',
         gradeLevel: 5,
+        hint: 'Probability is the number of desired outcomes divided by the total number of possible outcomes.',
       },
       {
         id: '56',
@@ -538,6 +594,7 @@ const chapters = [
         options: ['10', '11', '12', '13'],
         correctAnswer: '12',
         gradeLevel: 5,
+        hint: 'Use the Pythagorean theorem: a^2 + b^2 = c^2',
       },
       {
         id: '57',
@@ -547,6 +604,7 @@ const chapters = [
         options: ['90', '108', '120', '135'],
         correctAnswer: '108',
         gradeLevel: 5,
+        hint: 'The sum of the interior angles of a pentagon is 540 degrees. Each angle in a regular pentagon is equal.',
       },
       {
         id: '58',
@@ -556,6 +614,7 @@ const chapters = [
         options: ['x^2+x', '2x^2+3x', '4x+x', '9x^2'],
         correctAnswer: '2x^2+3x',
         gradeLevel: 5,
+        hint: 'Divide each term in the numerator by 3x.',
       },
       {
         id: '59',
@@ -565,6 +624,7 @@ const chapters = [
         options: ['3,6', '5,10', '7, 14', '9,18'],
         correctAnswer: '7, 14',
         gradeLevel: 5,
+        hint: 'Let w be the width. The perimeter is 2w + 2(2w) = 42. Solve for w.',
       },
       {
         id: '60',
@@ -574,6 +634,7 @@ const chapters = [
         options: ['22', '33', '44', '55'],
         correctAnswer: '44',
         gradeLevel: 5,
+        hint: 'Circumference = πd, where d is the diameter.',
       },
       {
         id: '61',
@@ -583,6 +644,7 @@ const chapters = [
         options: ['11', '21', '121', '131'],
         correctAnswer: '121',
         gradeLevel: 5,
+        hint: 'To find the percentage of a number, convert the percentage to a decimal and multiply by the number.',
       },
       {
         id: '62',
@@ -592,6 +654,7 @@ const chapters = [
         options: ['8', '9', '10', '12'],
         correctAnswer: '12',
         gradeLevel: 5,
+        hint: 'Multiply both sides of the equation by 3, then divide by 4 to isolate a.',
       },
       {
         id: '63',
@@ -601,6 +664,7 @@ const chapters = [
         options: ['5', '15', '25', '35'],
         correctAnswer: '25',
         gradeLevel: 5,
+        hint: 'Use the rule of exponents: a^(m)/a^(n) = a^(m-n).',
       },
       {
         id: '64',
@@ -610,6 +674,7 @@ const chapters = [
         options: ['0.25', '0.35', '0.45', '0.55'],
         correctAnswer: '0.45',
         gradeLevel: 5,
+        hint: 'Divide the numerator (9) by the denominator (20).',
       },
       {
         id: '65',
@@ -619,6 +684,7 @@ const chapters = [
         options: ['90', '180', '270', '360'],
         correctAnswer: '180',
         gradeLevel: 5,
+        hint: 'The sum of the interior angles in any triangle is always constant.',
       },
       {
         id: '66',
@@ -626,8 +692,9 @@ const chapters = [
         category: 'Math',
         type: 'multiple-choice',
         options: ['$400', '$800', '$1200', '$1600'],
-        correctAnswer: '1200',
+        correctAnswer: '$1200',
         gradeLevel: 5,
+        hint: 'Simple interest is calculated as Principal x Rate x Time.',
       },
       {
         id: '67',
@@ -637,6 +704,7 @@ const chapters = [
         options: ['9.5', '10.5', '11.5', '12.5'],
         correctAnswer: '11.5',
         gradeLevel: 5,
+        hint: 'The average is the sum of the numbers divided by the count of the numbers.',
       },
       {
         id: '68',
@@ -646,6 +714,7 @@ const chapters = [
         options: ['24', '26', '28', '30'],
         correctAnswer: '28',
         gradeLevel: 5,
+        hint: 'Remember, n! = n × (n-1) × (n-2) × ... × 1.',
       },
       {
         id: '69',
@@ -655,6 +724,7 @@ const chapters = [
         options: ['6', '8', '10', '12'],
         correctAnswer: '12',
         gradeLevel: 5,
+        hint: 'The Highest Common Factor (HCF) is the largest number that divides both numbers without leaving a remainder.',
       },
       {
         id: '70',
@@ -664,6 +734,7 @@ const chapters = [
         options: ['15', '20', '25', '30'],
         correctAnswer: '25',
         gradeLevel: 5,
+        hint: 'The series is composed of perfect squares.',
       },
       {
         id: '71',
@@ -673,6 +744,7 @@ const chapters = [
         options: ['7', '8', '9', '10'],
         correctAnswer: '10',
         gradeLevel: 5,
+        hint: 'The perimeter of a triangle is the sum of the lengths of all its sides. The two other sides are equal.',
       },
       {
         id: '72',
@@ -682,6 +754,7 @@ const chapters = [
         options: ['2^8', '3^5', 'Equal', 'Cannot be compared'],
         correctAnswer: '3^5',
         gradeLevel: 5,
+        hint: 'Calculate the actual value of 2^8 and 3^5 and compare.',
       },
       {
         id: '73',
@@ -691,6 +764,7 @@ const chapters = [
         options: ['7π', '14π', '21π', '28π'],
         correctAnswer: '14π',
         gradeLevel: 5,
+        hint: 'From the area, find the radius using A=πr², then find the circumference using C=2πr.',
       },
       {
         id: '74',
@@ -700,6 +774,7 @@ const chapters = [
         options: ['10^10', '10^50', '10^100', '10^1000'],
         correctAnswer: '10^100',
         gradeLevel: 5,
+        hint: 'A googol is a very large number.',
       },
       {
         id: '75',
@@ -709,6 +784,7 @@ const chapters = [
         options: ['0, 5', '1, 9', '2, 8', '3, 7'],
         correctAnswer: '2, 8',
         gradeLevel: 5,
+        hint: 'Remember, absolute value means the expression inside can be positive or negative.',
       },
       {
         id: '76',
@@ -718,6 +794,7 @@ const chapters = [
         options: ['38', '39', '40', '41'],
         correctAnswer: '41',
         gradeLevel: 5,
+        hint: 'The sequence is a list of prime numbers.',
       },
       {
         id: '77',
@@ -727,6 +804,7 @@ const chapters = [
         options: ['20, 35', '22, 33', '25, 30', '26, 29'],
         correctAnswer: '25, 30',
         gradeLevel: 5,
+        hint: 'Let the numbers be 5x and 6x. Then 5x + 6x = 55',
       },
       {
         id: '78',
@@ -736,6 +814,7 @@ const chapters = [
         options: ['$5.5', '$6.5', '$7.5', '$8.5'],
         correctAnswer: '$7.5',
         gradeLevel: 5,
+        hint: 'Find the cost of one apple, and then multiply by 5.',
       },
       {
         id: '79',
@@ -745,6 +824,7 @@ const chapters = [
         options: ['9/25', '10/25', '11/25', '12/25'],
         correctAnswer: '9/25',
         gradeLevel: 5,
+        hint: 'Write 0.36 as a fraction over 100 and simplify.',
       },
       {
         id: '80',
@@ -754,6 +834,7 @@ const chapters = [
         options: ['12', '13', '14', '15'],
         correctAnswer: '14',
         gradeLevel: 5,
+        hint: 'Number of diagonals = n(n - 3) / 2, where n is the number of sides.',
       },
       {
         id: '81',
@@ -763,6 +844,7 @@ const chapters = [
         options: ['95', '100', '105', '110'],
         correctAnswer: '105',
         gradeLevel: 5,
+        hint: 'Multiply 70 by 1.5.',
       },
       {
         id: '82',
@@ -772,6 +854,7 @@ const chapters = [
         options: ['15', '20', '25', '30'],
         correctAnswer: '25',
         gradeLevel: 5,
+        hint: 'Subtract 7 from both sides of the equation and then multiply by 5.',
       },
       {
         id: '83',
@@ -781,6 +864,7 @@ const chapters = [
         options: ['0', '1', '2', '3'],
         correctAnswer: '2',
         gradeLevel: 5,
+        hint: 'Log 100 means 10 to what power equals 100?',
       },
       {
         id: '84',
@@ -790,6 +874,7 @@ const chapters = [
         options: ['Prime that differ by 1', 'Primes that differ by 2', 'Prime that differ by 3', 'Prime that differ by 4'],
         correctAnswer: 'Primes that differ by 2',
         gradeLevel: 5,
+        hint: 'Twin primes are pairs of prime numbers that are close to each other.',
       },
       {
         id: '85',
@@ -799,6 +884,7 @@ const chapters = [
         options: ['11', '12', '13', '14'],
         correctAnswer: '12',
         gradeLevel: 5,
+        hint: 'Set up a proportion: (5 minutes / 1 hour) = (60 minutes / x hours).',
       },
       {
         id: '86',
@@ -808,6 +894,7 @@ const chapters = [
         options: ['Increase by 4', 'Decrease by 4', 'No Change', 'Increase by 6'],
         correctAnswer: 'No Change',
         gradeLevel: 5,
+        hint: 'Calculate the area of the rectangle before and after the changes.',
       },
       {
         id: '87',
@@ -817,6 +904,7 @@ const chapters = [
         options: ['Number divisible by 3', 'Sum of divisors equals the number', 'Sum of divisors less than the number', 'A prime number'],
         correctAnswer: 'Sum of divisors equals the number',
         gradeLevel: 5,
+        hint: 'Perfect number has the sum of divisors without itself is equal to the number.',
       },
       {
         id: '88',
@@ -826,6 +914,7 @@ const chapters = [
         options: ['150', '153', '156', '159'],
         correctAnswer: '156',
         gradeLevel: 5,
+        hint: 'The sum of angles in a quadrilateral is 360 degrees. Ratio is 3:5:9:13, sum = 30. Therefore let the common ratio be x.',
       },
       {
         id: '89',
@@ -835,6 +924,7 @@ const chapters = [
         options: ['March 14', 'April 14', 'May 14', 'June 14'],
         correctAnswer: 'March 14',
         gradeLevel: 5,
+        hint: 'Check the date equivalent of 3.14.',
       },
       {
         id: '90',
@@ -844,6 +934,7 @@ const chapters = [
         options: ['Prime of the form 2^n - 1', 'Prime of the form 2^n', 'Prime of the form 2^n + 1', 'Even Prime'],
         correctAnswer: 'Prime of the form 2^n - 1',
         gradeLevel: 5,
+        hint: 'A Mersenne prime is a prime number that is one less than a power of two.',
       },
       {
         id: '91',
@@ -853,6 +944,7 @@ const chapters = [
         options: ['11', '12', '13', '14'],
         correctAnswer: '14',
         gradeLevel: 5,
+        hint: 'Divide the total amount you have by the cost of a ream.',
       },
       {
         id: '92',
@@ -862,6 +954,7 @@ const chapters = [
         options: ['Multiplies by 3', 'Multiplies by 9', 'Multiplies by 27', 'Multiplies by 81'],
         correctAnswer: 'Multiplies by 27',
         gradeLevel: 5,
+        hint: 'The volume of a sphere is proportional to the cube of the radius.',
       },
       {
         id: '93',
@@ -871,6 +964,7 @@ const chapters = [
         options: ['2', '3', '4', '5'],
         correctAnswer: '4',
         gradeLevel: 5,
+        hint: 'A composite number has factors other than 1 and itself.',
       },
       {
         id: '94',
@@ -880,6 +974,7 @@ const chapters = [
         options: ['31', '32', '33', '34'],
         correctAnswer: '33',
         gradeLevel: 5,
+        hint: 'Substitute the value of m + n.',
       },
       {
         id: '95',
@@ -889,6 +984,7 @@ const chapters = [
         options: ['100', '200', '300', '400'],
         correctAnswer: '200',
         gradeLevel: 5,
+        hint: 'The area of a triangle is one-half base times height.',
       },
       {
         id: '96',
@@ -898,6 +994,7 @@ const chapters = [
         options: ['14', '15', '16', '17'],
         correctAnswer: '16',
         gradeLevel: 5,
+        hint: 'Apply Pythagorean theorem.',
       },
       {
         id: '97',
@@ -907,6 +1004,7 @@ const chapters = [
         options: ['6', '7', '8', '9'],
         correctAnswer: '8',
         gradeLevel: 5,
+        hint: 'Use the total age = number of children × average age formula.',
       },
       {
         id: '98',
@@ -916,6 +1014,7 @@ const chapters = [
         options: ['Sum of Previous number', 'Product of Previous 2 numbers', 'Sum of Previous 2 numbers', 'Product of Previous number'],
         correctAnswer: 'Sum of Previous 2 numbers',
         gradeLevel: 5,
+        hint: 'Each number is the sum of the two preceding ones.',
       },
       {
         id: '99',
@@ -925,6 +1024,7 @@ const chapters = [
         options: ['55', '60', '65', '70'],
         correctAnswer: '65',
         gradeLevel: 5,
+        hint: 'The average speed is calculated as distance/time.',
       },
       {
         id: '100',
@@ -934,6 +1034,7 @@ const chapters = [
         options: ['$540.5', '$542.5', '$544.5', '$546.5'],
         correctAnswer: '$544.5',
         gradeLevel: 5,
+        hint: 'Calculate the amount of the sales tax and add it to the original cost.',
       },
     ],
   },
@@ -952,6 +1053,7 @@ const chapters = [
         options: ['3', '4', '5', '6'],
         correctAnswer: '5',
         gradeLevel: 4,
+        hint: 'First subtract 5 from both sides of the equation.',
       },
       {
         id: '5',
@@ -961,6 +1063,7 @@ const chapters = [
         options: ['2a + 7b', '2a + 6b', '3a + 7b', '3a + 6b'],
         correctAnswer: '2a + 7b',
         gradeLevel: 5,
+        hint: 'Distribute 3 into the parentheses and then combine like terms.',
       },
       {
         id: '6',
@@ -970,6 +1073,7 @@ const chapters = [
         options: ['7', '49', '25', '14'],
         correctAnswer: '25',
         gradeLevel: 5,
+        hint: 'Calculate x squared and y squared separately, then add them together.',
       },
       {
         id: '7',
@@ -979,6 +1083,7 @@ const chapters = [
         options: ['3', '6', '9', '12'],
         correctAnswer: '6',
         gradeLevel: 5,
+        hint: 'Distribute 4 into the parentheses, then isolate x.',
       },
       {
         id: '8',
@@ -988,6 +1093,7 @@ const chapters = [
         options: ['2', '4', '6', '8'],
         correctAnswer: '4',
         gradeLevel: 4,
+        hint: 'Combine like terms, moving variable terms to one side and constants to the other.',
       },
       {
         id: '9',
@@ -997,6 +1103,7 @@ const chapters = [
         options: ['6m - 6', '6m + 6', '2m - 6', '2m + 6'],
         correctAnswer: '6m - 6',
         gradeLevel: 5,
+        hint: 'Distribute -2 into the parentheses and then combine like terms.',
       },
       {
         id: '10',
@@ -1006,6 +1113,7 @@ const chapters = [
         options: ['7', '11', '14', '22'],
         correctAnswer: '14',
         gradeLevel: 5,
+        hint: 'Substitute x and y with their given values and simplify the expression.',
       },
       {
         id: '11',
@@ -1015,6 +1123,7 @@ const chapters = [
         options: ['2', '4', '6', '8'],
         correctAnswer: '4',
         gradeLevel: 4,
+        hint: 'Distribute 3 into the parentheses, then isolate y.',
       },
       {
         id: '12',
@@ -1024,6 +1133,7 @@ const chapters = [
         options: ['2', '4', '6', '8'],
         correctAnswer: '4',
         gradeLevel: 4,
+        hint: 'Isolate the term with p, then divide by the coefficient.',
       },
       {
         id: '13',
@@ -1033,6 +1143,7 @@ const chapters = [
         options: ['1', '3', '5', '7'],
         correctAnswer: '3',
         gradeLevel: 4,
+        hint: 'First, subtract 3 from both sides of the equation.',
       },
       {
         id: '14',
@@ -1042,6 +1153,7 @@ const chapters = [
         options: ['3', '5', '7', '9'],
         correctAnswer: '5',
         gradeLevel: 5,
+        hint: 'Add 1 to both sides and then divide by 2.',
       },
       {
         id: '15',
@@ -1051,6 +1163,7 @@ const chapters = [
         options: ['1', '2', '3', '4'],
         correctAnswer: '2',
         gradeLevel: 5,
+        hint: 'Distribute and combine like terms before isolating y.',
       },
       {
         id: '16',
@@ -1060,6 +1173,7 @@ const chapters = [
         options: ['1', '3', '5', '7'],
         correctAnswer: '3',
         gradeLevel: 4,
+        hint: 'Divide both sides by 3 and then subtract 2.',
       },
       {
         id: '17',
@@ -1069,6 +1183,7 @@ const chapters = [
         options: ['1', '3', '5', '7'],
         correctAnswer: '5',
         gradeLevel: 5,
+        hint: 'Divide by 2, then add 1 to both sides to isolate y.',
       },
       {
         id: '18',
@@ -1078,6 +1193,7 @@ const chapters = [
         options: ['1', '3', '5', '7'],
         correctAnswer: '3',
         gradeLevel: 5,
+        hint: 'Subtract 2, then divide by 5.',
       },
       {
         id: '19',
@@ -1087,6 +1203,7 @@ const chapters = [
         options: ['2', '4', '6', '8'],
         correctAnswer: '4',
         gradeLevel: 4,
+        hint: 'Collect like terms by subtracting a from both sides.',
       },
       {
         id: '20',
@@ -1096,6 +1213,7 @@ const chapters = [
         options: ['2', '4', '6', '8'],
         correctAnswer: '4',
         gradeLevel: 5,
+        hint: 'Distribute the 4, then combine like terms, and isolate x.',
       },
       {
         id: '21',
@@ -1105,6 +1223,7 @@ const chapters = [
         options: ['12', '18', '24', '30'],
         correctAnswer: '18',
         gradeLevel: 5,
+        hint: 'Add 1 to both sides, then multiply by 3.',
       },
       {
         id: '22',
@@ -1114,6 +1233,7 @@ const chapters = [
         options: ['5', '7', '9', '11'],
         correctAnswer: '9',
         gradeLevel: 5,
+        hint: 'Add 7 to both sides, then divide by 3.',
       },
       {
         id: '23',
@@ -1123,6 +1243,7 @@ const chapters = [
         options: ['3', '5', '7', '9'],
         correctAnswer: '5',
         gradeLevel: 4,
+        hint: 'Subtract 2 from both sides and divide by 4.',
       },
       {
         id: '24',
@@ -1132,6 +1253,7 @@ const chapters = [
         options: ['3', '5', '7', '9'],
         correctAnswer: '7',
         gradeLevel: 5,
+        hint: 'Divide both sides by 2 and then subtract 1.',
       },
       {
         id: '25',
@@ -1141,6 +1263,7 @@ const chapters = [
         options: ['3', '5', '7', '9'],
         correctAnswer: '7',
         gradeLevel: 5,
+        hint: 'Add 10 to both sides and then divide by 5.',
       },
       {
         id: '26',
@@ -1150,6 +1273,7 @@ const chapters = [
         options: ['3', '5', '7', '9'],
         correctAnswer: '7',
         gradeLevel: 5,
+        hint: 'First add 5 to both sides, then divide by 3.',
       },
       {
         id: '27',
@@ -1159,6 +1283,7 @@ const chapters = [
         options: ['2', '4', '6', '8'],
         correctAnswer: '4',
         gradeLevel: 4,
+        hint: 'Distribute the 4, then isolate y.',
       },
       {
         id: '28',
@@ -1168,6 +1293,7 @@ const chapters = [
         options: ['3', '5', '6', '7'],
         correctAnswer: '6',
         gradeLevel: 5,
+        hint: 'Subtract 7 from both sides, then divide by 2.',
       },
       {
         id: '29',
@@ -1177,6 +1303,7 @@ const chapters = [
         options: ['3', '5', '7', '9'],
         correctAnswer: '7',
         gradeLevel: 5,
+        hint: 'Subtract 5 from both sides, then divide by 3.',
       },
       {
         id: '30',
@@ -1186,6 +1313,7 @@ const chapters = [
         options: ['2', '4', '6', '8'],
         correctAnswer: '8',
         gradeLevel: 4,
+        hint: 'First add 12 to both sides of the equation.',
       },
       {
         id: '31',
@@ -1195,6 +1323,7 @@ const chapters = [
         options: ['0', '2', '4', '6'],
         correctAnswer: '2',
         gradeLevel: 4,
+        hint: 'Add 14 to both sides, then divide by 7.',
       },
       {
         id: '32',
@@ -1204,6 +1333,7 @@ const chapters = [
         options: ['2', '4', '6', '8'],
         correctAnswer: '4',
         gradeLevel: 5,
+        hint: 'Subtract 3, then divide by 5.',
       },
       {
         id: '33',
@@ -1213,6 +1343,7 @@ const chapters = [
         options: ['2', '4', '6', '8'],
         correctAnswer: '4',
         gradeLevel: 4,
+        hint: 'Divide both sides by 2, then subtract 3.',
       },
       {
         id: '34',
@@ -1222,6 +1353,7 @@ const chapters = [
         options: ['3', '5', '7', '9'],
         correctAnswer: '5',
         gradeLevel: 5,
+        hint: 'Add 8, then divide by 4.',
       },
       {
         id: '35',
@@ -1231,6 +1363,7 @@ const chapters = [
         options: ['2', '4', '6', '8'],
         correctAnswer: '8',
         gradeLevel: 4,
+        hint: 'Divide both sides by 3, then add 2.',
       },
       {
         id: '36',
@@ -1240,6 +1373,7 @@ const chapters = [
         options: ['3', '5', '7', '9'],
         correctAnswer: '5',
         gradeLevel: 5,
+        hint: 'Subtract 5, then divide by 2.',
       },
       {
         id: '37',
@@ -1249,6 +1383,7 @@ const chapters = [
         options: ['3', '5', '7', '9'],
         correctAnswer: '5',
         gradeLevel: 5,
+        hint: 'Add 9, then divide by 6.',
       },
       {
         id: '38',
@@ -1258,6 +1393,7 @@ const chapters = [
         options: ['2', '4', '6', '7'],
         correctAnswer: '7',
         gradeLevel: 5,
+        hint: 'Subtract 10, then divide by 5.',
       },
       {
         id: '39',
@@ -1267,6 +1403,7 @@ const chapters = [
         options: ['2', '4', '6', '8'],
         correctAnswer: '8',
         gradeLevel: 4,
+        hint: 'Divide both sides by 2, then add 3.',
       },
       {
         id: '40',
@@ -1276,6 +1413,7 @@ const chapters = [
         options: ['3', '5', '7', '9'],
         correctAnswer: '5',
         gradeLevel: 5,
+        hint: 'Subtract 5, then divide by 4.',
       },
       {
         id: '41',
@@ -1285,6 +1423,7 @@ const chapters = [
         options: ['2', '4', '6', '8'],
         correctAnswer: '4',
         gradeLevel: 4,
+        hint: 'Subtract 7, then divide by 3.',
       },
       {
         id: '42',
@@ -1294,6 +1433,7 @@ const chapters = [
         options: ['3', '5', '7', '9'],
         correctAnswer: '5',
         gradeLevel: 5,
+        hint: 'Add 4, then divide by 5.',
       },
       {
         id: '43',
@@ -1303,6 +1443,7 @@ const chapters = [
         options: ['3', '5', '7', '9'],
         correctAnswer: '5',
         gradeLevel: 5,
+        hint: 'Divide by 2, then subtract 3 from both sides to isolate "a".',
       },
       {
         id: '44',
@@ -1312,6 +1453,7 @@ const chapters = [
         options: ['4', '6', '8', '10'],
         correctAnswer: '10',
         gradeLevel: 4,
+        hint: 'Add 11 to both sides of the equation, then divide by 3.',
       },
       {
         id: '45',
@@ -1321,6 +1463,7 @@ const chapters = [
         options: ['3', '5', '7', '9'],
         correctAnswer: '7',
         gradeLevel: 5,
+        hint: 'Subtract 2, then divide by 4.',
       },
       {
         id: '46',
@@ -1330,6 +1473,7 @@ const chapters = [
         options: ['4', '6', '8', '10'],
         correctAnswer: '6',
         gradeLevel: 4,
+        hint: 'Add 4, then divide by 6',
       },
       {
         id: '47',
@@ -1339,6 +1483,7 @@ const chapters = [
         options: ['8', '10', '12', '14'],
         correctAnswer: '12',
         gradeLevel: 5,
+        hint: 'Subtract 6 from both sides, then divide by 3.',
       },
       {
         id: '48',
@@ -1348,6 +1493,7 @@ const chapters = [
         options: ['7', '9', '11', '13'],
         correctAnswer: '9',
         gradeLevel: 5,
+        hint: 'Subtract 3, then divide by 5.',
       },
       {
         id: '49',
@@ -1357,6 +1503,7 @@ const chapters = [
         options: ['13', '15', '17', '19'],
         correctAnswer: '17',
         gradeLevel: 5,
+        hint: 'Distribute the 2, then isolate p',
       },
       {
         id: '50',
@@ -1366,6 +1513,7 @@ const chapters = [
         options: ['5', '7', '9', '11'],
         correctAnswer: '9',
         gradeLevel: 5,
+        hint: 'Add 12, then divide by 7.',
       },
       {
         id: '51',
@@ -1375,6 +1523,7 @@ const chapters = [
         options: ['4', '5', '6', '7'],
         correctAnswer: '6',
         gradeLevel: 5,
+        hint: 'Subtract 15 from both sides and divide by 9',
       },
       {
         id: '52',
@@ -1384,6 +1533,7 @@ const chapters = [
         options: ['12', '14', '16', '18'],
         correctAnswer: '18',
         gradeLevel: 5,
+        hint: 'Add 5 to both sides and divide by 2',
       },
       {
         id: '53',
@@ -1393,6 +1543,7 @@ const chapters = [
         options: ['10', '12', '14', '16'],
         correctAnswer: '12',
         gradeLevel: 5,
+        hint: 'Divide both sides by 3, then subtract 7',
       },
       {
         id: '54',
@@ -1402,6 +1553,7 @@ const chapters = [
         options: ['10', '12', '14', '16'],
         correctAnswer: '12',
         gradeLevel: 5,
+        hint: 'Add 10 to both sides then divide by 12',
       },
       {
         id: '55',
@@ -1411,6 +1563,7 @@ const chapters = [
         options: ['13', '15', '17', '19'],
         correctAnswer: '17',
         gradeLevel: 5,
+        hint: 'Subtract 4, then divide by 2.',
       },
       {
         id: '56',
@@ -1420,6 +1573,7 @@ const chapters = [
         options: ['6', '8', '10', '12'],
         correctAnswer: '10',
         gradeLevel: 5,
+        hint: 'Subtract 14, then divide by 5.',
       },
       {
         id: '57',
@@ -1429,6 +1583,7 @@ const chapters = [
         options: ['7', '9', '11', '13'],
         correctAnswer: '11',
         gradeLevel: 5,
+        hint: 'Divide by 4, then add 3.',
       },
       {
         id: '58',
@@ -1438,6 +1593,7 @@ const chapters = [
         options: ['16', '18', '20', '22'],
         correctAnswer: '18',
         gradeLevel: 5,
+        hint: 'Plug in 80 = 2(22) + 2W then solve for W',
       },
       {
         id: '59',
@@ -1447,6 +1603,7 @@ const chapters = [
         options: ['45', '47', '49', '51'],
         correctAnswer: '47',
         gradeLevel: 5,
+        hint: 'Use the fact that the sum of angles in a triangle equals 180 degrees: A + B + C = 180.',
       },
       {
         id: '60',
@@ -1456,6 +1613,7 @@ const chapters = [
         options: ['πr²', '4πr²', '5πr²', '2πr'],
         correctAnswer: '4πr²',
         gradeLevel: 5,
+        hint: 'The surface area is calculated as four times the product of Pi and the radius squared.',
       },
       {
         id: '61',
@@ -1465,6 +1623,7 @@ const chapters = [
         options: ['45', '50', '55', '60'],
         correctAnswer: '55',
         gradeLevel: 5,
+        hint: 'Multiply both sides by 3/2, then subtract 5.',
       },
       {
         id: '62',
@@ -1474,6 +1633,7 @@ const chapters = [
         options: ['2', '4', '6', '8'],
         correctAnswer: '6',
         gradeLevel: 5,
+        hint: 'Subtract 8 and then divide by 2.',
       },
       {
         id: '63',
@@ -1483,6 +1643,7 @@ const chapters = [
         options: ['36', '56', '66', '76'],
         correctAnswer: '56',
         gradeLevel: 5,
+        hint: 'Substitute the value of x into the expression: 6^2 + 5*6 - 10.',
       },
       {
         id: '64',
@@ -1492,6 +1653,7 @@ const chapters = [
         options: ['4a+2b', '2a+3b', '3a +3b', '10 ab'],
         correctAnswer: '2a + 3b',
         gradeLevel: 5,
+        hint: 'Combine like terms: a + a = 2a and b + b + b = 3b.',
       },
       {
         id: '65',
@@ -1501,6 +1663,7 @@ const chapters = [
         options: ['4', '6', '8', '10'],
         correctAnswer: '8',
         gradeLevel: 5,
+        hint: 'Combine like terms to simplify the equation first, then solve for x.',
       },
       {
         id: '66',
@@ -1510,6 +1673,7 @@ const chapters = [
         options: ['3', '13/3', '14/3', '15/3'],
         correctAnswer: '14/3',
         gradeLevel: 5,
+        hint: 'Group like terms, and then solve for x.',
       },
       {
         id: '67',
@@ -1519,6 +1683,7 @@ const chapters = [
         options: ['7x+y', '7x-y', '7xy', 'x+7y'],
         correctAnswer: '7x - y',
         gradeLevel: 5,
+        hint: 'Add the like terms.',
       },
       {
         id: '68',
@@ -1528,6 +1693,7 @@ const chapters = [
         options: ['4', '5', '6', '7'],
         correctAnswer: '6',
         gradeLevel: 5,
+        hint: 'Remove the parenthesis first, then solve for a.',
       },
       {
         id: '69',
@@ -1537,6 +1703,7 @@ const chapters = [
         options: ['11', '13', '15', '17'],
         correctAnswer: '15',
         gradeLevel: 5,
+        hint: 'Isolate x by performing the operations of subtraction and division.',
       },
       {
         id: '70',
@@ -1546,6 +1713,7 @@ const chapters = [
         options: ['±√3', '±√5', '±3', '±5'],
         correctAnswer: '±√5',
         gradeLevel: 5,
+        hint: 'Subtract 20 from both sides, then divide by 5, then take the square root.',
       },
       {
         id: '71',
@@ -1555,6 +1723,7 @@ const chapters = [
         options: ['14y - 6', '6y + 6', '6y - 6', '4y - 6'],
         correctAnswer: '6y - 6',
         gradeLevel: 5,
+        hint: 'Remember to distribute the -2 before combining like terms.',
       },
       {
         id: '72',
@@ -1564,6 +1733,7 @@ const chapters = [
         options: ['10', '12', '14', '16'],
         correctAnswer: '12',
         gradeLevel: 5,
+        hint: 'Substitute y with -1 in the equation.',
       },
       {
         id: '73',
@@ -1573,6 +1743,7 @@ const chapters = [
         options: ['0', '1', '2', '3'],
         correctAnswer: '1',
         gradeLevel: 5,
+        hint: 'Open the parenthesis first, then calculate b.',
       },
       {
         id: '74',
@@ -1582,6 +1753,7 @@ const chapters = [
         options: ['Expression with variables', 'Expression with variables numbers', 'Expression with constants and variables', 'Expression with equations'],
         correctAnswer: 'Expression with constants and variables',
         gradeLevel: 5,
+        hint: 'It is an expression consisting of constants, variables, and exponents, combined using addition, subtraction, multiplication, and non-negative integer exponentiation of variables..',
       },
       {
         id: '75',
@@ -1591,6 +1763,7 @@ const chapters = [
         options: ['1,2', '2,8', '1,3', '3, 7'],
         correctAnswer: '2, 8',
         gradeLevel: 5,
+        hint: 'Absolute value problems usually have 2 solutions',
       },
       {
         id: '76',
@@ -1600,6 +1773,7 @@ const chapters = [
         options: ['12', '13', '14', '15'],
         correctAnswer: '14',
         gradeLevel: 5,
+        hint: 'Add 14 to both sides.',
       },
       {
         id: '77',
@@ -1609,6 +1783,7 @@ const chapters = [
         options: ['10', '11', '12', '13'],
         correctAnswer: '10',
         gradeLevel: 5,
+        hint: 'Subtract equation one from equation two',
       },
       {
         id: '78',
@@ -1618,6 +1793,7 @@ const chapters = [
         options: ['80', '90', '100', '110'],
         correctAnswer: '100',
         gradeLevel: 5,
+        hint: 'Replace the number into the unknown variables',
       },
       {
         id: '79',
@@ -1627,6 +1803,7 @@ const chapters = [
         options: ['10', '20', '30', '40'],
         correctAnswer: '30',
         gradeLevel: 5,
+        hint: 'All three sides are same length.',
       },
       {
         id: '80',
@@ -1636,6 +1813,7 @@ const chapters = [
         options: ['15', '16', '17', '18'],
         correctAnswer: '15',
         gradeLevel: 5,
+        hint: 'Add 7 to both sides then multiply with 5/3',
       },
       {
         id: '81',
@@ -1645,6 +1823,7 @@ const chapters = [
         options: ['16', '26', '36', '46'],
         correctAnswer: '36',
         gradeLevel: 5,
+        hint: 'replace b with 3',
       },
       {
         id: '82',
@@ -1654,6 +1833,7 @@ const chapters = [
         options: ['5', '15', '25', '35'],
         correctAnswer: '25',
         gradeLevel: 5,
+        hint: 'Subtract 7 from both sides, then multiple with 5',
       },
       {
         id: '83',
@@ -1663,6 +1843,7 @@ const chapters = [
         options: ['x/2 + 6', '(x + 6) / 2', 'x+2/6', 'x/3 + 6'],
         correctAnswer: '(x + 6) / 2',
         gradeLevel: 5,
+        hint: 'Distribute the numbers then remove like terms ',
       },
       {
         id: '84',
@@ -1672,6 +1853,7 @@ const chapters = [
         options: ['An equation where the highest exponent is three', 'An equation where the highest exponent is one', 'An equation where the highest exponent is four', 'An equation where the highest exponent is two'],
         correctAnswer: 'An equation where the highest exponent is two',
         gradeLevel: 5,
+        hint: 'It takes the form ax^2 + bx + c = 0.',
       },
       {
         id: '85',
@@ -1681,6 +1863,7 @@ const chapters = [
         options: ['5', '6', '7', '8'],
         correctAnswer: '8',
         gradeLevel: 5,
+        hint: 'x is a number you times by itself.',
       },
       {
         id: '86',
@@ -1690,6 +1873,7 @@ const chapters = [
         options: ['ab+ac', 'a+b+c', 'ac+bc', 'ab+bc'],
         correctAnswer: 'ab+ac',
         gradeLevel: 5,
+        hint: 'a needs to me multiplied with both b and c',
       },
       {
         id: '87',
@@ -1699,6 +1883,7 @@ const chapters = [
         options: ['3x + 5 = 11', '3x + 5 = 12', '3x + 5 = 13', '3x + 5 = 14'],
         correctAnswer: '3x + 5 = 14',
         gradeLevel: 5,
+        hint: 'Replace the number then see if it equals',
       },
       {
         id: '88',
@@ -1708,6 +1893,7 @@ const chapters = [
         options: ['37', '38', '39', '40'],
         correctAnswer: '39',
         gradeLevel: 5,
+        hint: 'Replace the number into the variables',
       },
       {
         id: '89',
@@ -1717,6 +1903,7 @@ const chapters = [
         options: ['1', '2', '3', '4'],
         correctAnswer: '3',
         gradeLevel: 5,
+        hint: 'Add 8 to both sides, divide by 2.',
       },
       {
         id: '90',
@@ -1726,6 +1913,7 @@ const chapters = [
         options: ['ab+bc', 'a+b+c', 'abc', 'a/b/c'],
         correctAnswer: 'a + b + c',
         gradeLevel: 5,
+        hint: 'Add all sides',
       },
       {
         id: '91',
@@ -1735,6 +1923,7 @@ const chapters = [
         options: ['70', '71', '72', '73'],
         correctAnswer: '72',
         gradeLevel: 5,
+        hint: 'Let x be the common factor. Set up the equation 2x + 3x = 180',
       },
       {
         id: '92',
@@ -1744,6 +1933,7 @@ const chapters = [
         options: ['x^2/y^3', 'y^3/x^2', 'x^2 y^3', 'xy'],
         correctAnswer: 'y^3 / x^2',
         gradeLevel: 5,
+        hint: 'x^-2 is 1/x^2',
       },
       {
         id: '93',
@@ -1753,6 +1943,7 @@ const chapters = [
         options: ['(4 + x)(4 + x)', '(4 - x)(4-x)', '(4 + x)(4 - x)', '(4+x)(4+y)'],
         correctAnswer: '(4 + x)(4 - x)',
         gradeLevel: 5,
+        hint: 'It is of the form a^2 - b^2 = (a+b)(a-b).',
       },
       {
         id: '94',
@@ -1762,6 +1953,7 @@ const chapters = [
         options: ['-4', '-5', '-6', '-7'],
         correctAnswer: '-5',
         gradeLevel: 5,
+        hint: 'Formula is -b/a',
       },
       {
         id: '95',
@@ -1771,6 +1963,7 @@ const chapters = [
         options: ['x > 3', 'x = 3', 'x &lt; 3', 'x + 3'],
         correctAnswer: 'x &lt; 3',
         gradeLevel: 5,
+        hint: 'Subtract 5 from both sides. then divide by 3.',
       },
       {
         id: '96',
@@ -1780,6 +1973,7 @@ const chapters = [
         options: ['πd or 2πr', 'πd', '3πd', '5πd'],
         correctAnswer: 'πd or 2πr',
         gradeLevel: 5,
+        hint: 'Circumference id calculated as multiple of PI and diamter.',
       },
       {
         id: '97',
@@ -1789,6 +1983,7 @@ const chapters = [
         options: ['Eqilateral', 'Isosceles', 'Right angle triangle', 'Scalene'],
         correctAnswer: 'Right angle triangle',
         gradeLevel: 5,
+        hint: 'Use pythagoras to find out which kind of tiangle it is',
       },
       {
         id: '98',
@@ -1798,6 +1993,7 @@ const chapters = [
         options: ['Number in front of a variable', 'A expression', 'Constant', 'Polynomial'],
         correctAnswer: 'Number in front of a variable',
         gradeLevel: 5,
+        hint: 'Number with alpgabet',
       },
       {
         id: '99',
@@ -1807,6 +2003,7 @@ const chapters = [
         options: ['120', '130', '140', '150'],
         correctAnswer: '140',
         gradeLevel: 5,
+        hint: 'multiply the lenghts to get the area',
       },
       {
         id: '100',
@@ -1816,6 +2013,7 @@ const chapters = [
         options: ['Measurement of a line', 'Measurement of a curve', 'Measurement of a angle', 'Measurement of a surface'],
         correctAnswer: 'Measurement of a surface',
         gradeLevel: 5,
+        hint: 'the extent or measurement of a surface.',
       },
     ],
   },
@@ -1834,6 +2032,7 @@ const chapters = [
         options: ['6', '7', '8', '9'],
         correctAnswer: '8',
         gradeLevel: 4,
+        hint: 'Start with the total and subtract the number given away.',
       },
       {
         id: '2',
@@ -1843,6 +2042,7 @@ const chapters = [
         options: ['6', '7', '8', '9'],
         correctAnswer: '8',
         gradeLevel: 4,
+        hint: 'Use division to find the number of cows in each group.',
       },
       {
         id: '3',
@@ -1852,6 +2052,7 @@ const chapters = [
         options: ['$9', '$10', '$11', '$12'],
         correctAnswer: '$11',
         gradeLevel: 4,
+        hint: 'Add the cost of the book and the pen.',
       },
       {
         id: '4',
@@ -1861,6 +2062,7 @@ const chapters = [
         options: ['50', '60', '70', '80'],
         correctAnswer: '60',
         gradeLevel: 5,
+        hint: 'Average speed is total distance divided by total time.',
       },
       {
         id: '5',
@@ -1870,6 +2072,7 @@ const chapters = [
         options: ['30', '40', '50', '60'],
         correctAnswer: '60',
         gradeLevel: 5,
+        hint: 'Area of a rectangle is length times width.',
       },
       {
         id: '6',
@@ -1879,6 +2082,7 @@ const chapters = [
         options: ['17', '19', '27', '29'],
         correctAnswer: '27',
         gradeLevel: 4,
+        hint: 'Multiply the number of bags by the number of marbles in each bag.',
       },
       {
         id: '7',
@@ -1888,6 +2092,7 @@ const chapters = [
         options: ['3', '4', '5', '6'],
         correctAnswer: '5',
         gradeLevel: 4,
+        hint: 'Subtract the number of slices eaten from the total number of slices.',
       },
       {
         id: '8',
@@ -1897,6 +2102,7 @@ const chapters = [
         options: ['70', '80', '90', '100'],
         correctAnswer: '90',
         gradeLevel: 4,
+        hint: 'Subtract the number of girls from the total number of students.',
       },
       {
         id: '9',
@@ -1906,6 +2112,7 @@ const chapters = [
         options: ['10', '11', '12', '13'],
         correctAnswer: '12',
         gradeLevel: 4,
+        hint: 'Subtract the number of cookies sold from the total number of cookies made.',
       },
       {
         id: '10',
@@ -1915,6 +2122,7 @@ const chapters = [
         options: ['50', '60', '70', '80'],
         correctAnswer: '60',
         gradeLevel: 5,
+        hint: 'Multiply the number of rows by the number of flowers in each row.',
       },
       {
         id: '11',
@@ -1924,6 +2132,7 @@ const chapters = [
         options: ['$22', '$23', '$24', '$25'],
         correctAnswer: '$25',
         gradeLevel: 5,
+        hint: 'Subtract the cost of the shirt from the amount paid.',
       },
       {
         id: '12',
@@ -1933,6 +2142,7 @@ const chapters = [
         options: ['655', '755', '855', '955'],
         correctAnswer: '655',
         gradeLevel: 5,
+        hint: 'Subtract the number of borrowed books from the total number of books.',
       },
       {
         id: '13',
@@ -1942,6 +2152,7 @@ const chapters = [
         options: ['1 hour 35 minutes', '1 hour 45 minutes', '1 hour 55 minutes', '2 hours 5 minutes'],
         correctAnswer: '1 hour 45 minutes',
         gradeLevel: 5,
+        hint: 'Calculate the difference between the start and end times.',
       },
       {
         id: '14',
@@ -1951,6 +2162,7 @@ const chapters = [
         options: ['3', '4', '5', '6'],
         correctAnswer: '5',
         gradeLevel: 5,
+        hint: 'Time = Distance / Speed.',
       },
       {
         id: '15',
@@ -1960,6 +2172,7 @@ const chapters = [
         options: ['$36', '$37.5', '$40', '$42.5'],
         correctAnswer: '$37.5',
         gradeLevel: 5,
+        hint: 'Let x be the original cost; x + 0.2x = $45.',
       },
       {
         id: '16',
@@ -1969,6 +2182,7 @@ const chapters = [
         options: ['30', '40', '50', '60'],
         correctAnswer: '50',
         gradeLevel: 5,
+        hint: 'Multiply the number of students by the number of pencils needed per student.',
       },
       {
         id: '17',
@@ -1978,6 +2192,7 @@ const chapters = [
         options: ['100', '110', '120', '130'],
         correctAnswer: '120',
         gradeLevel: 5,
+        hint: 'Multiply the number of rows by the number of trees in each row.',
       },
       {
         id: '18',
@@ -1987,6 +2202,7 @@ const chapters = [
         options: ['315', '325', '335', '345'],
         correctAnswer: '315',
         gradeLevel: 5,
+        hint: 'Subtract the number of liters used from the total number of liters in the tank.',
       },
       {
         id: '19',
@@ -1996,6 +2212,7 @@ const chapters = [
         options: ['$400', '$415', '$425', '$435'],
         correctAnswer: '$425',
         gradeLevel: 5,
+        hint: 'Add the price of the TV and the price of the DVD player.',
       },
       {
         id: '20',
@@ -2005,6 +2222,7 @@ const chapters = [
         options: ['70', '80', '90', '100'],
         correctAnswer: '90',
         gradeLevel: 5,
+        hint: 'Average speed is equal to total distance divided by total time.',
       },
       {
         id: '21',
@@ -2014,6 +2232,7 @@ const chapters = [
         options: ['40', '41', '42', '43'],
         correctAnswer: '43',
         gradeLevel: 4,
+        hint: 'Add the number of marbles John has to the number of marbles Tom has.',
       },
       {
         id: '22',
@@ -2023,6 +2242,7 @@ const chapters = [
         options: ['21', '22', '23', '24'],
         correctAnswer: '23',
         gradeLevel: 4,
+        hint: 'Subtract the number of stickers given away from the original number of stickers.',
       },
       {
         id: '23',
@@ -2032,6 +2252,7 @@ const chapters = [
         options: ['6', '7', '8', '9'],
         correctAnswer: '8',
         gradeLevel: 4,
+        hint: 'Divide the total number of cupcakes by the number of boxes.',
       },
       {
         id: '24',
@@ -2041,6 +2262,7 @@ const chapters = [
         options: ['50', '60', '70', '80'],
         correctAnswer: '60',
         gradeLevel: 5,
+        hint: 'To find the average speed, divide the distance by the time.',
       },
       {
         id: '25',
@@ -2050,6 +2272,7 @@ const chapters = [
         options: ['10', '11', '12', '13'],
         correctAnswer: '12',
         gradeLevel: 5,
+        hint: 'Multiply the total number of students by the fraction that represents girls.',
       },
       {
         id: '26',
@@ -2059,6 +2282,7 @@ const chapters = [
         options: ['$4', '$5', '$6', '$7'],
         correctAnswer: '$6',
         gradeLevel: 5,
+        hint: 'Multiply the cost of one apple by the number of apples.',
       },
       {
         id: '27',
@@ -2068,6 +2292,7 @@ const chapters = [
         options: ['40', '42', '44', '46'],
         correctAnswer: '46',
         gradeLevel: 5,
+        hint: 'Perimeter is twice the sum of length and width.',
       },
       {
         id: '28',
@@ -2077,6 +2302,7 @@ const chapters = [
         options: ['3', '4', '5', '6'],
         correctAnswer: '3',
         gradeLevel: 5,
+        hint: 'Multiply the total number of slices by the fraction of the pizza eaten.',
       },
       {
         id: '29',
@@ -2086,6 +2312,7 @@ const chapters = [
         options: ['60', '70', '80', '90'],
         correctAnswer: '80',
         gradeLevel: 5,
+        hint: 'Convert to percentage.',
       },
       {
         id: '30',
@@ -2095,6 +2322,7 @@ const chapters = [
         options: ['$1', '$2', '$3', '$4'],
         correctAnswer: '$3',
         gradeLevel: 5,
+        hint: 'Multiply cost by total items',
       },
       {
         id: '31',
@@ -2104,6 +2332,7 @@ const chapters = [
         options: ['50', '100', '150', '200'],
         correctAnswer: '150',
         gradeLevel: 5,
+        hint: 'Multiply 450 by 1/3 to find number of student.',
       },
       {
         id: '32',
@@ -2113,6 +2342,7 @@ const chapters = [
         options: ['6', '7', '8', '9'],
         correctAnswer: '8',
         gradeLevel: 5,
+        hint: 'Divide total pages with page to read per day',
       },
       {
         id: '33',
@@ -2122,6 +2352,7 @@ const chapters = [
         options: ['6', '7', '8', '9'],
         correctAnswer: '9',
         gradeLevel: 4,
+        hint: 'Calculate division.',
       },
       {
         id: '34',
@@ -2131,6 +2362,7 @@ const chapters = [
         options: ['200', '225', '250', '275'],
         correctAnswer: '225',
         gradeLevel: 5,
+        hint: 'Speed * time',
       },
       {
         id: '35',
@@ -2140,6 +2372,7 @@ const chapters = [
         options: ['230', '235', '240', '250'],
         correctAnswer: '240',
         gradeLevel: 5,
+        hint: 'multiply sides to calculate',
       },
       {
         id: '36',
@@ -2149,6 +2382,7 @@ const chapters = [
         options: ['$40.5', '$41', '$41.5', '$42.5'],
         correctAnswer: '$42.5',
         gradeLevel: 5,
+        hint: 'What is 8.5 * 5?',
       },
       {
         id: '37',
@@ -2158,6 +2392,7 @@ const chapters = [
         options: ['$11.5', '$12', '$12.5', '$13'],
         correctAnswer: '$12.5',
         gradeLevel: 5,
+        hint: 'What is 1.25 * 10',
       },
       {
         id: '38',
@@ -2167,6 +2402,7 @@ const chapters = [
         options: ['40', '50', '60', '70'],
         correctAnswer: '60',
         gradeLevel: 5,
+        hint: 'Divide the total miles by the total time to get the average speed.',
       },
       {
         id: '39',
@@ -2176,6 +2412,7 @@ const chapters = [
         options: ['300', '320', '330', '340'],
         correctAnswer: '330',
         gradeLevel: 5,
+        hint: 'Find the percentage of the boys, which is 100 - 45 then multiply.',
       },
       {
         id: '40',
@@ -2185,6 +2422,7 @@ const chapters = [
         options: ['$100', '$200', '$300', '$400'],
         correctAnswer: '$300',
         gradeLevel: 5,
+        hint: 'Saving = Amount savings per weeks X Total Weeks',
       },
       {
         id: '41',
@@ -2194,6 +2432,7 @@ const chapters = [
         options: ['$14', '$15', '$16', '$17'],
         correctAnswer: '$17',
         gradeLevel: 5,
+        hint: 'Add both',
       },
       {
         id: '42',
@@ -2203,6 +2442,7 @@ const chapters = [
         options: ['13', '14', '15', '16'],
         correctAnswer: '13',
         gradeLevel: 5,
+        hint: 'How much more means subtraction.',
       },
       {
         id: '43',
@@ -2212,6 +2452,7 @@ const chapters = [
         options: ['10', '11', '12', '13'],
         correctAnswer: '12',
         gradeLevel: 4,
+        hint: 'Calculate division for number of groups',
       },
       {
         id: '44',
@@ -2221,6 +2462,7 @@ const chapters = [
         options: ['685', '695', '705', '715'],
         correctAnswer: '695',
         gradeLevel: 4,
+        hint: 'Add them all to find total',
       },
       {
         id: '45',
@@ -2230,6 +2472,7 @@ const chapters = [
         options: ['4507', '4607', '4707', '4807'],
         correctAnswer: '4607',
         gradeLevel: 4,
+        hint: 'Calculate plus of all number of roses',
       },
       {
         id: '46',
@@ -2239,6 +2482,7 @@ const chapters = [
         options: ['$52', '$62', '$72', '$82'],
         correctAnswer: '$62',
         gradeLevel: 4,
+        hint: 'Add them all',
       },
       {
         id: '47',
@@ -2248,6 +2492,7 @@ const chapters = [
         options: ['392', '402', '412', '422'],
         correctAnswer: '402',
         gradeLevel: 4,
+        hint: 'Sum',
       },
       {
         id: '48',
@@ -2257,6 +2502,7 @@ const chapters = [
         options: ['2579', '2679', '2779', '2879'],
         correctAnswer: '2579',
         gradeLevel: 4,
+        hint: 'Total student counts.',
       },
       {
         id: '49',
@@ -2266,6 +2512,7 @@ const chapters = [
         options: ['60', '70', '80', '90'],
         correctAnswer: '70',
         gradeLevel: 4,
+        hint: 'What does total mean again?',
       },
       {
         id: '50',
@@ -2275,6 +2522,7 @@ const chapters = [
         options: ['$8.65', '$9.65', '$10.65', '$11.65'],
         correctAnswer: '$8.65',
         gradeLevel: 5,
+        hint: 'Sum what he has spent then subtract this with money he gave.',
       },
     ],
   },
@@ -2293,6 +2541,7 @@ const chapters = [
         options: ['Oxygen', 'Carbon dioxide', 'Nitrogen', 'Hydrogen'],
         correctAnswer: 'Carbon dioxide',
         gradeLevel: 4,
+        hint: 'Think about what plants need to create their own food.',
       },
       {
         id: '52',
@@ -2302,6 +2551,7 @@ const chapters = [
         options: ['Cell', 'Gene', 'Atom', 'Molecule'],
         correctAnswer: 'Gene',
         gradeLevel: 5,
+        hint: 'It contains information passed from parents to offspring.',
       },
       {
         id: '53',
@@ -2311,6 +2561,7 @@ const chapters = [
         options: ['Condensation', 'Evaporation', 'Freezing', 'Melting'],
         correctAnswer: 'Evaporation',
         gradeLevel: 4,
+        hint: 'Think about what happens when you boil water.',
       },
       {
         id: '54',
@@ -2320,6 +2571,7 @@ const chapters = [
         options: ['Absorb UV radiation', 'Produce oxygen', 'Regulate temperature', 'Create clouds'],
         correctAnswer: 'Absorb UV radiation',
         gradeLevel: 5,
+        hint: 'It protects us from harmful rays from the sun.',
       },
       {
         id: '55',
@@ -2329,6 +2581,7 @@ const chapters = [
         options: ['Gravity', 'Friction', 'Magnetism', 'Tension'],
         correctAnswer: 'Friction',
         gradeLevel: 4,
+        hint: 'It makes it harder to slide things across the floor.',
       },
       {
         id: '56',
@@ -2338,6 +2591,7 @@ const chapters = [
         options: ['Kinetic energy', 'Potential energy', 'Thermal energy', 'Chemical energy'],
         correctAnswer: 'Potential energy',
         gradeLevel: 5,
+        hint: 'Think of a stretched rubber band or a ball at the top of a hill.',
       },
       {
         id: '57',
@@ -2347,6 +2601,7 @@ const chapters = [
         options: ['Eukaryotic', 'Prokaryotic', 'Stem cell', 'Blood cell'],
         correctAnswer: 'Prokaryotic',
         gradeLevel: 5,
+        hint: 'It has only a simple cell structure.',
       },
       {
         id: '58',
@@ -2356,6 +2611,7 @@ const chapters = [
         options: ['Meiosis', 'Mitosis', 'Osmosis', 'Diffusion'],
         correctAnswer: 'Mitosis',
         gradeLevel: 5,
+        hint: 'This process is essential for growth and repair.',
       },
       {
         id: '59',
@@ -2365,6 +2621,7 @@ const chapters = [
         options: ['Fight infection', 'Oxygen transport', 'Blood clotting', 'Produce hormones'],
         correctAnswer: 'Oxygen transport',
         gradeLevel: 5,
+        hint: 'It carries oxygen to all parts of the body.',
       },
       {
         id: '60',
@@ -2374,6 +2631,7 @@ const chapters = [
         options: ['Gallbladder', 'Appendix', 'Spleen', 'Pancreas'],
         correctAnswer: 'Appendix',
         gradeLevel: 5,
+        hint: 'It has no clear purpose in humans anymore.',
       },
       {
         id: '61',
@@ -2383,6 +2641,7 @@ const chapters = [
         options: ['Photosynthesis', 'Cellular respiration', 'Transpiration', 'Osmosis'],
         correctAnswer: 'Cellular respiration',
         gradeLevel: 5,
+        hint: 'Plants use energy and give out what is essential for our breathing',
       },
       {
         id: '62',
@@ -2392,6 +2651,7 @@ const chapters = [
         options: ['Earth', 'Jupiter', 'Saturn', 'Neptune'],
         correctAnswer: 'Jupiter',
         gradeLevel: 4,
+        hint: 'Is the biggest and has a eye?',
       },
       {
         id: '63',
@@ -2401,6 +2661,7 @@ const chapters = [
         options: ['Air pressure', 'Temperature', 'Wind speed', 'Humidity'],
         correctAnswer: 'Wind speed',
         gradeLevel: 5,
+        hint: 'Think weather!',
       },
       {
         id: '64',
@@ -2410,6 +2671,7 @@ const chapters = [
         options: ['Magnetism', 'Gravitation', 'Electricity', 'Tension'],
         correctAnswer: 'Gravitation',
         gradeLevel: 4,
+        hint: 'Why we are on earth',
       },
       {
         id: '65',
@@ -2419,6 +2681,7 @@ const chapters = [
         options: ['Evolution', 'Homeostasis', 'Adaptation', 'Respiration'],
         correctAnswer: 'Homeostasis',
         gradeLevel: 5,
+        hint: 'Balance.',
       },
       {
         id: '66',
@@ -2428,6 +2691,7 @@ const chapters = [
         options: ['To introduce bias', 'To test the hypothesis', 'Baseline for comparison', 'To create errors'],
         correctAnswer: 'Baseline for comparison',
         gradeLevel: 5,
+        hint: 'This group does not receive testing.',
       },
       {
         id: '67',
@@ -2437,6 +2701,7 @@ const chapters = [
         options: ['Electricity', 'Magnetism', 'Gravity', 'Friction'],
         correctAnswer: 'Friction',
         gradeLevel: 4,
+        hint: 'Makes things harder when moving.',
       },
       {
         id: '68',
@@ -2446,6 +2711,7 @@ const chapters = [
         options: ['Solid, liquid, gas', 'Solid, liquid, plasma', 'Solid, liquid, energy', 'Solid, gas, energy'],
         correctAnswer: 'Solid, liquid, gas',
         gradeLevel: 4,
+        hint: 'Things are in these',
       },
       {
         id: '69',
@@ -2455,6 +2721,7 @@ const chapters = [
         options: ['Energy', 'Force', 'Power', 'Work'],
         correctAnswer: 'Force',
         gradeLevel: 4,
+        hint: 'Cause movement.',
       },
       {
         id: '70',
@@ -2464,6 +2731,7 @@ const chapters = [
         options: ['A type of cell', 'A type of rock', 'A large community of organisms and plants in an environment', 'A small community of organisms'],
         correctAnswer: 'A large community of organisms and plants in an environment',
         gradeLevel: 5,
+        hint: 'A habitat.',
       },
       {
         id: '71',
@@ -2473,6 +2741,7 @@ const chapters = [
         options: ['Basic unit of life', 'Basic unit of matter', 'Basic unit of energy', 'Basic unit of force'],
         correctAnswer: 'Basic unit of life',
         gradeLevel: 4,
+        hint: 'Smallest unit of living thing',
       },
       {
         id: '72',
@@ -2482,6 +2751,7 @@ const chapters = [
         options: ['To pump blood', 'To digest food', 'To filter the blood and produce urine', 'To produce hormones'],
         correctAnswer: 'To filter the blood and produce urine',
         gradeLevel: 5,
+        hint: 'What filters the blood in your body?',
       },
       {
         id: '73',
@@ -2491,6 +2761,7 @@ const chapters = [
         options: ['From plant remains', 'From cooling magma or lava', 'From animal remains', 'From sediments'],
         correctAnswer: 'From cooling magma or lava',
         gradeLevel: 5,
+        hint: 'Rocks from fire',
       },
       {
         id: '74',
@@ -2500,6 +2771,7 @@ const chapters = [
         options: ['Photosynthesis', 'Digestion', 'Cellular Respiration', 'Excretion'],
         correctAnswer: 'Cellular Respiration',
         gradeLevel: 5,
+        hint: 'Energy by cells',
       },
       {
         id: '75',
@@ -2509,6 +2781,7 @@ const chapters = [
         options: ['Andromeda', 'Milky Way', 'Triangulum', 'Whirlpool'],
         correctAnswer: 'Milky Way',
         gradeLevel: 5,
+        hint: 'We live here.',
       },
       {
         id: '76',
@@ -2518,6 +2791,7 @@ const chapters = [
         options: ['Liver', 'Pancreas', 'Stomach', 'Kidney'],
         correctAnswer: 'Pancreas',
         gradeLevel: 5,
+        hint: 'Organ that produces',
       },
       {
         id: '77',
@@ -2527,6 +2801,7 @@ const chapters = [
         options: ['-100', '-273.15', '0', '100'],
         correctAnswer: '-273.15',
         gradeLevel: 5,
+        hint: 'Very cold',
       },
       {
         id: '78',
@@ -2536,6 +2811,7 @@ const chapters = [
         options: ['Growth', 'Movement', 'Transformation', 'Change in weather'],
         correctAnswer: 'Transformation',
         gradeLevel: 4,
+        hint: 'How a butterfly grows',
       },
       {
         id: '79',
@@ -2545,6 +2821,7 @@ const chapters = [
         options: ['Earth', 'Venus', 'Mercury', 'Mars'],
         correctAnswer: 'Mercury',
         gradeLevel: 4,
+        hint: 'The first',
       },
       {
         id: '80',
@@ -2554,6 +2831,7 @@ const chapters = [
         options: ['C', 'H', 'N', 'O'],
         correctAnswer: 'O',
         gradeLevel: 4,
+        hint: 'What we breath',
       },
       {
         id: '81',
@@ -2563,6 +2841,7 @@ const chapters = [
         options: ['1', '2', '3', '4'],
         correctAnswer: '2',
         gradeLevel: 5,
+        hint: 'How many chambers',
       },
       {
         id: '82',
@@ -2572,6 +2851,7 @@ const chapters = [
         options: ['Amplitude', 'Frequency', 'Wavelength', 'Speed'],
         correctAnswer: 'Amplitude',
         gradeLevel: 5,
+        hint: 'Heigh has ampl',
       },
       {
         id: '83',
@@ -2581,6 +2861,7 @@ const chapters = [
         options: ['Crust, mantle, outer core and inner core', 'Crust, mantle, core, atmosphere', 'Crust, hydrosphere, mantle, core', 'Crust, mantle, inner core, atmosphere'],
         correctAnswer: 'Crust, mantle, outer core and inner core',
         gradeLevel: 5,
+        hint: 'Think of center of earth',
       },
       {
         id: '84',
@@ -2590,6 +2871,7 @@ const chapters = [
         options: ['Earths revolution', 'Earths tilt', 'Earths rotation', 'Sun’s revolution'],
         correctAnswer: 'Earths rotation',
         gradeLevel: 5,
+        hint: 'spins',
       },
       {
         id: '85',
@@ -2599,6 +2881,7 @@ const chapters = [
         options: ['23', '33', '43', '53'],
         correctAnswer: '33',
         gradeLevel: 5,
+        hint: 'back bone',
       },
       {
         id: '86',
@@ -2608,6 +2891,7 @@ const chapters = [
         options: ['The imperial system', 'The metric system', 'The English System', 'The binary system'],
         correctAnswer: 'The metric system',
         gradeLevel: 5,
+        hint: 'meters!',
       },
       {
         id: '87',
@@ -2617,6 +2901,7 @@ const chapters = [
         options: ['A, B, C, O', 'A, B, AB, O', 'A, C, D, O', 'A, B, D, O'],
         correctAnswer: 'A, B, AB, O',
         gradeLevel: 5,
+        hint: 'What is your blood type?',
       },
       {
         id: '88',
@@ -2626,6 +2911,7 @@ const chapters = [
         options: ['Zoology', 'Botany', 'Ecology', 'Anatomy'],
         correctAnswer: 'Botany',
         gradeLevel: 5,
+        hint: 'Planets science.',
       },
       {
         id: '89',
@@ -2635,6 +2921,7 @@ const chapters = [
         options: ['Herd', 'Pack', 'Pride', 'Group'],
         correctAnswer: 'Pride',
         gradeLevel: 4,
+        hint: 'King of Jungle',
       },
       {
         id: '90',
@@ -2644,6 +2931,7 @@ const chapters = [
         options: ['Sight', 'Hearing', 'Smell', 'Touch'],
         correctAnswer: 'Touch',
         gradeLevel: 4,
+        hint: 'Can you think',
       },
       {
         id: '91',
@@ -2653,6 +2941,7 @@ const chapters = [
         options: ['Earth', 'Venus', 'Jupiter', 'Mars'],
         correctAnswer: 'Jupiter',
         gradeLevel: 4,
+        hint: 'The biggest.',
       },
       {
         id: '92',
@@ -2662,6 +2951,7 @@ const chapters = [
         options: ['28', '30', '32', '34'],
         correctAnswer: '32',
         gradeLevel: 5,
+        hint: 'Look in a mirror',
       },
       {
         id: '93',
@@ -2671,6 +2961,7 @@ const chapters = [
         options: ['Calf', 'Pup', 'Tadpole', 'Kid'],
         correctAnswer: 'Tadpole',
         gradeLevel: 4,
+        hint: 'It swims',
       },
       {
         id: '94',
@@ -2680,6 +2971,7 @@ const chapters = [
         options: ['Carbon', 'Oxygen', 'Hydrogen', 'Nitrogen'],
         correctAnswer: 'Hydrogen',
         gradeLevel: 5,
+        hint: 'Hydrogen',
       },
       {
         id: '95',
@@ -2689,6 +2981,7 @@ const chapters = [
         options: ['Igneous, Earth, Sun', 'Igneous, Water, Metamorphic', 'Igneous, Sedimentary, Metamorphic', 'Sedimentary, Soil, Metamorphic'],
         correctAnswer: 'Igneous, Sedimentary, Metamorphic',
         gradeLevel: 5,
+        hint: 'rocks from earth',
       },
       {
         id: '96',
@@ -2698,6 +2991,7 @@ const chapters = [
         options: ['New, crescent, full', 'New, half, full', 'New, crescent, half, full', 'New, crescent, half, gibbous, full'],
         correctAnswer: 'New, crescent, half, gibbous, full',
         gradeLevel: 5,
+        hint: 'Shape of the moon',
       },
       {
         id: '97',
@@ -2707,6 +3001,7 @@ const chapters = [
         options: ['Vitamin A', 'Vitamin B', 'Vitamin C', 'Vitamin D'],
         correctAnswer: 'Vitamin D',
         gradeLevel: 5,
+        hint: 'Sunshine',
       },
       {
         id: '98',
@@ -2716,6 +3011,7 @@ const chapters = [
         options: ['Atlantis', 'Lemuria', 'Pangaea', 'Gondwana'],
         correctAnswer: 'Pangaea',
         gradeLevel: 5,
+        hint: 'Everything started as',
       },
       {
         id: '99',
@@ -2725,6 +3021,7 @@ const chapters = [
         options: ['O positive', 'O negative', 'AB positive', 'AB negative'],
         correctAnswer: 'O negative',
         gradeLevel: 5,
+        hint: 'The special type',
       },
       {
         id: '100',
@@ -2734,6 +3031,7 @@ const chapters = [
         options: ['Winter, Spring, Hot, Autumn', 'Spring, Summer, Rainy, Autumn', 'Winter, Spring, Summer, Autumn', 'Winter, Autumn, Sunny, Rainy'],
         correctAnswer: 'Winter, Spring, Summer, Autumn',
         gradeLevel: 4,
+        hint: 'The season change',
       },
       {
         id: '101',
@@ -2743,6 +3041,7 @@ const chapters = [
         options: ['Heart', 'Brain', 'Lungs', 'Stomach'],
         correctAnswer: 'Brain',
         gradeLevel: 4,
+        hint: 'Where thoughts are',
       },
       {
         id: '102',
@@ -2752,6 +3051,7 @@ const chapters = [
         options: ['Calf', 'Pup', 'Kid', 'Chick'],
         correctAnswer: 'Pup',
         gradeLevel: 4,
+        hint: 'Small dog',
       },
       {
         id: '103',
@@ -2761,6 +3061,7 @@ const chapters = [
         options: ['Pack', 'Herd', 'School', 'Pride'],
         correctAnswer: 'School',
         gradeLevel: 4,
+        hint: 'Students',
       },
       {
         id: '104',
@@ -2770,6 +3071,7 @@ const chapters = [
         options: ['Enamel', 'Bone', 'Cartilage', 'Ligament'],
         correctAnswer: 'Enamel',
         gradeLevel: 5,
+        hint: 'Teeth',
       },
       {
         id: '105',
@@ -2779,6 +3081,7 @@ const chapters = [
         options: ['Yes', 'No', 'Sometimes', 'Depends on species'],
         correctAnswer: 'Yes',
         gradeLevel: 4,
+        hint: 'Insects with many',
       },
       {
         id: '106',
@@ -2788,6 +3091,7 @@ const chapters = [
         options: ['Yes', 'No', 'Sometimes', 'Depends on species'],
         correctAnswer: 'No',
         gradeLevel: 4,
+        hint: 'Ostrich',
       },
       {
         id: '107',
@@ -2797,6 +3101,7 @@ const chapters = [
         options: ['Heart', 'Brain', 'Lungs', 'Stomach'],
         correctAnswer: 'Heart',
         gradeLevel: 4,
+        hint: 'lub dub',
       },
       {
         id: '108',
@@ -2806,6 +3111,7 @@ const chapters = [
         options: ['Yes', 'No', 'Sometimes', 'Depends on species'],
         correctAnswer: 'Yes',
         gradeLevel: 4,
+        hint: 'Can we give milk?',
       },
       {
         id: '109',
@@ -2815,6 +3121,7 @@ const chapters = [
         options: ['Heart', 'Brain', 'Skin', 'Liver'],
         correctAnswer: 'Skin',
         gradeLevel: 5,
+        hint: 'Our cover',
       },
       {
         id: '110',
@@ -2824,6 +3131,7 @@ const chapters = [
         options: ['Six', 'Seven', 'Eight', 'Nine'],
         correctAnswer: 'Eight',
         gradeLevel: 4,
+        hint: 'How many',
       },
       {
         id: '111',
@@ -2833,6 +3141,7 @@ const chapters = [
         options: ['Sirius', 'Polaris', 'Vega', 'The Sun'],
         correctAnswer: 'The Sun',
         gradeLevel: 4,
+        hint: 'Not the other stars',
       },
       {
         id: '112',
@@ -2842,6 +3151,7 @@ const chapters = [
         options: ['Fall, Winter, spring, summer', 'Winter, Summer, Spring, fall', 'summer, Winter, spring, fall', 'Summer, Fall, Winter, spring'],
         correctAnswer: 'Fall, Winter, spring, summer',
         gradeLevel: 4,
+        hint: 'When',
       },
       {
         id: '113',
@@ -2851,6 +3161,7 @@ const chapters = [
         options: ['No', 'Yes', 'Spin', 'Rotation'],
         correctAnswer: 'No',
         gradeLevel: 4,
+        hint: 'All run at different speeds',
       },
       {
         id: '114',
@@ -2860,6 +3171,7 @@ const chapters = [
         options: ['A marine bilogist', 'A geologist', 'A paleontologist', 'A biologist'],
         correctAnswer: 'A paleontologist',
         gradeLevel: 4,
+        hint: 'old',
       },
       {
         id: '115',
@@ -2869,6 +3181,7 @@ const chapters = [
         options: ['1', '2', '3', '4'],
         correctAnswer: '2',
         gradeLevel: 4,
+        hint: 'Two',
       },
       {
         id: '116',
@@ -2878,6 +3191,7 @@ const chapters = [
         options: ['206', '306', '406', '506'],
         correctAnswer: '206',
         gradeLevel: 4,
+        hint: 'hundreds',
       },
       {
         id: '117',
@@ -2887,6 +3201,7 @@ const chapters = [
         options: ['Star', 'Meteor', 'Moon', 'Planet'],
         correctAnswer: 'Star',
         gradeLevel: 4,
+        hint: 'light',
       },
       {
         id: '118',
@@ -2896,6 +3211,7 @@ const chapters = [
         options: ['Grizzly Bear', 'Saltwater Crocodile', 'Tiger', 'Hippo'],
         correctAnswer: 'Saltwater Crocodile',
         gradeLevel: 5,
+        hint: 'Scary',
       },
       {
         id: '119',
@@ -2905,6 +3221,7 @@ const chapters = [
         options: ['The Milky Way', 'Hercules-Corona Borealis Great Wall', 'The Solar System', 'The Oort Cloud'],
         correctAnswer: 'Hercules-Corona Borealis Great Wall',
         gradeLevel: 5,
+        hint: 'Wall from space',
       },
       {
         id: '120',
@@ -2914,6 +3231,7 @@ const chapters = [
         options: ['Oxygen', 'Hydrogen', 'Carbon', 'Nitrogen'],
         correctAnswer: 'Nitrogen',
         gradeLevel: 5,
+        hint: 'Not oxygen',
       },
       {
         id: '121',
@@ -2923,6 +3241,7 @@ const chapters = [
         options: ['1', '2', '3', '4'],
         correctAnswer: '3',
         gradeLevel: 5,
+        hint: 'alot',
       },
       {
         id: '122',
@@ -2932,6 +3251,7 @@ const chapters = [
         options: ['Atlantic', 'Pacific', 'Indian', 'Southern'],
         correctAnswer: 'Pacific',
         gradeLevel: 4,
+        hint: 'Ocean name',
       },
       {
         id: '123',
@@ -2941,6 +3261,7 @@ const chapters = [
         options: ['6', '8', '10', '12'],
         correctAnswer: '8',
         gradeLevel: 4,
+        hint: 'spider',
       },
       {
         id: '124',
@@ -2950,6 +3271,7 @@ const chapters = [
         options: ['Skin', 'Skull', 'Vertebrae', 'Ribs'],
         correctAnswer: 'Skull',
         gradeLevel: 4,
+        hint: 'Protects thoughts',
       },
       {
         id: '125',
@@ -2959,6 +3281,7 @@ const chapters = [
         options: ['Na', 'Cl', 'NaCl', 'H20'],
         correctAnswer: 'NaCl',
         gradeLevel: 5,
+        hint: 'Salty',
       },
       {
         id: '126',
@@ -2968,6 +3291,7 @@ const chapters = [
         options: ['Sequoia sempervirens', 'Eucalyptus regnans', 'Redwood', 'Pinus'],
         correctAnswer: 'Sequoia sempervirens',
         gradeLevel: 5,
+        hint: 'Super big tree',
       },
       {
         id: '127',
@@ -2977,6 +3301,7 @@ const chapters = [
         options: ['Energy', 'Gravity', 'Motion', 'Friction'],
         correctAnswer: 'Friction',
         gradeLevel: 4,
+        hint: 'Opposite push',
       },
       {
         id: '128',
@@ -2986,6 +3311,7 @@ const chapters = [
         options: ['Solid, liquid, gas', 'Solid, gas, plasma', 'Liquid, solution, solid', 'Plasma, gas, vapor'],
         correctAnswer: 'Solid, liquid, gas',
         gradeLevel: 4,
+        hint: 'The 3.',
       },
       {
         id: '129',
@@ -2995,6 +3321,7 @@ const chapters = [
         options: ['motion', 'energy', 'force', 'push'],
         correctAnswer: 'force',
         gradeLevel: 4,
+        hint: 'A name for push and pull',
       },
       {
         id: '130',
@@ -3004,7 +3331,808 @@ const chapters = [
         options: ['plantist', 'zoologist', 'biologist', 'botanist'],
         correctAnswer: 'botanist',
         gradeLevel: 4,
+        hint: 'Like plants',
       },
+      {
+        id: '131',
+        text: 'What helps a bear to stay warm during the winter?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Feathers', 'Fur', 'Scales', 'Gills'],
+        correctAnswer: 'Fur',
+        gradeLevel: 4,
+        hint: 'Keeps things cosy',
+      },
+       {
+        id: '132',
+        text: 'True or False: Sound travels faster than light.',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['True', 'False'],
+        correctAnswer: 'False',
+        gradeLevel: 5,
+        hint: 'See then hear',
+      },
+      {
+        id: '133',
+        text: 'Which part of the plant is responsible for absorbing water and nutrients from the soil?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Leaves', 'Stem', 'Roots', 'Flowers'],
+        correctAnswer: 'Roots',
+        gradeLevel: 4,
+        hint: 'In the soil',
+      },
+      {
+        id: '134',
+        text: 'What is the name of the process that plants use to make their own food?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Respiration', 'Transpiration', 'Photosynthesis', 'Digestion'],
+        correctAnswer: 'Photosynthesis',
+        gradeLevel: 5,
+        hint: 'Photo',
+      },
+      {
+        id: '135',
+        text: 'Which of the following is NOT a state of matter?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Solid', 'Liquid', 'Gas', 'Energy'],
+        correctAnswer: 'Energy',
+        gradeLevel: 4,
+        hint: 'Energy',
+      },
+      {
+        id: '136',
+        text: 'What is the name of the force that pulls objects toward the Earth?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Magnetism', 'Gravity', 'Friction', 'Tension'],
+        correctAnswer: 'Gravity',
+        gradeLevel: 4,
+        hint: 'Earth',
+      },
+      {
+        id: '137',
+        text: 'Which of the following animals is a reptile?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Frog', 'Snake', 'Bird', 'Fish'],
+        correctAnswer: 'Snake',
+        gradeLevel: 4,
+        hint: 'Scales.',
+      },
+      {
+        id: '138',
+        text: 'What is the name of the gas that we breathe in from the air?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Carbon Dioxide', 'Oxygen', 'Nitrogen', 'Hydrogen'],
+        correctAnswer: 'Oxygen',
+        gradeLevel: 4,
+        hint: 'Breathe In',
+      },
+      {
+        id: '139',
+        text: 'Which planet is known as the "Red Planet?"',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Venus', 'Mars', 'Jupiter', 'Saturn'],
+        correctAnswer: 'Mars',
+        gradeLevel: 5,
+        hint: 'Planet',
+      },
+      {
+        id: '140',
+        text: 'What is the process of an animal changing during its life cycle, like a caterpillar turning into a butterfly?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Evolution', 'Metamorphosis', 'Adaptation', 'Migration'],
+        correctAnswer: 'Metamorphosis',
+        gradeLevel: 5,
+        hint: 'transformation',
+      },
+      {
+        id: '141',
+        text: 'Which of the following is an example of a renewable energy source?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Coal', 'Oil', 'Natural Gas', 'Solar'],
+        correctAnswer: 'Solar',
+        gradeLevel: 5,
+        hint: 'sun',
+      },
+      {
+        id: '142',
+        text: 'What is the name of the layer of gases that surrounds the Earth?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Hydrosphere', 'Lithosphere', 'Atmosphere', 'Biosphere'],
+        correctAnswer: 'Atmosphere',
+        gradeLevel: 4,
+        hint: 'air',
+      },
+      {
+        id: '143',
+        text: 'Which of the following is a tool used to measure temperature?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Barometer', 'Anemometer', 'Thermometer', 'Hygrometer'],
+        correctAnswer: 'Thermometer',
+        gradeLevel: 4,
+        hint: 'Temp',
+      },
+      {
+        id: '144',
+        text: 'Which of the following is a type of cloud?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Stratus', 'Sand', 'Rock', 'Magma'],
+        correctAnswer: 'Stratus',
+        gradeLevel: 4,
+        hint: 'Clouds',
+      },
+      {
+        id: '145',
+        text: 'What is the part of the body that helps you smell?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Ears', 'Nose', 'Eyes', 'Brain'],
+        correctAnswer: 'Nose',
+        gradeLevel: 4,
+        hint: 'Sense',
+      },
+      {
+        id: '146',
+        text: 'True or False: Plants need sunlight to grow.',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['True', 'False'],
+        correctAnswer: 'True',
+        gradeLevel: 4,
+        hint: 'Fact',
+      },
+      {
+        id: '147',
+        text: 'The heart is made of what type of cells?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Blood cells', 'Brain cells', 'Muscle cells', 'Nerve cells'],
+        correctAnswer: 'Muscle cells',
+        gradeLevel: 4,
+        hint: 'Power',
+      },
+      {
+        id: '148',
+        text: 'What is the name of the hot molten rock that is found inside a volcano?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Magma', 'Lava', 'Rock', 'Sand'],
+        correctAnswer: 'Magma',
+        gradeLevel: 4,
+        hint: 'Volcano',
+      },
+      {
+        id: '149',
+        text: 'Which of the following do plants consume?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Oxygen', 'Carbon Dioxide', 'Hydrogen', 'Nitrogen'],
+        correctAnswer: 'Carbon Dioxide',
+        gradeLevel: 4,
+        hint: 'Plants',
+      },
+      {
+        id: '150',
+        text: 'Is the Earth flat?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['True', 'False'],
+        correctAnswer: 'False',
+        gradeLevel: 4,
+        hint: 'Shape',
+      },
+      {
+        id: '151',
+        text: 'How many legs does a crab have?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['6', '8', '10', '12'],
+        correctAnswer: '10',
+        gradeLevel: 4,
+        hint: 'Shell',
+      },
+      {
+        id: '152',
+        text: 'What are the tiny structures in a cell that carry out specific functions?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Genes', 'Organs', 'Organelles', 'Tissues'],
+        correctAnswer: 'Organelles',
+        gradeLevel: 5,
+        hint: 'Mini Organs',
+      },
+      {
+        id: '153',
+        text: 'Which of these is NOT a type of material?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Natural', 'Non-living', 'Synthetic', 'Composite'],
+        correctAnswer: 'Non-living',
+        gradeLevel: 5,
+        hint: 'Not Material',
+      },
+      {
+        id: '154',
+        text: 'What does the Lymphatic system do?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Removes waste and toxins from bodily tissues', 'Digests Food', 'Pumps blood around the body', 'Supplies oxygen to the body'],
+        correctAnswer: 'Removes waste and toxins from bodily tissues',
+        gradeLevel: 5,
+        hint: 'Cleans the body',
+      },
+      {
+        id: '155',
+        text: 'Why do we need to digest food?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['For energy and growth', 'To breath', 'So we can poo', 'So we can have a varied diet'],
+        correctAnswer: 'For energy and growth',
+        gradeLevel: 5,
+        hint: 'Get what we need',
+      },
+      {
+        id: '156',
+        text: 'What is the name of the equipment that measures the strength of an earthquake?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Barometer', 'Seismograph', 'Telescope', 'Microscope'],
+        correctAnswer: 'Seismograph',
+        gradeLevel: 5,
+        hint: 'Quake equipment',
+      },
+      {
+        id: '157',
+        text: 'True or False: The human body has more bacterial cells than human cells.',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['True', 'False'],
+        correctAnswer: 'True',
+        gradeLevel: 5,
+        hint: 'Tons and loads',
+      },
+      {
+        id: '158',
+        text: 'What is the chemical symbol for gold?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Au', 'Ag', 'Fe', 'Cu'],
+        correctAnswer: 'Au',
+        gradeLevel: 5,
+        hint: 'Rare and special symbol',
+      },
+      {
+        id: '159',
+        text: 'What are the 3 states of water?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Solid, gas, plasma', 'Solid, liquid, gas', 'Gas, ice, water', 'Liquid, water, plasma'],
+        correctAnswer: 'Solid, liquid, gas',
+        gradeLevel: 5,
+        hint: 'Matter of forms',
+      },
+      {
+        id: '160',
+        text: 'Which planet is known as the Morning Star or the Evening Star?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Mars', 'Jupiter', 'Venus', 'Saturn'],
+        correctAnswer: 'Venus',
+        gradeLevel: 5,
+        hint: 'Goddess of beauty',
+      },
+      {
+        id: '161',
+        text: 'What are the main functions of the roots of a tree?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Anchoring, storage, and transporting water and nutrients', 'Producing oxygen and capturing sunlight', 'Attracting pollinators and producing seeds', 'Photosynthesis'],
+        correctAnswer: 'Anchoring, storage, and transporting water and nutrients',
+        gradeLevel: 5,
+        hint: 'Trees',
+      },
+      {
+        id: '162',
+        text: 'What is the primary function of white blood cells?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Transporting oxygen', 'Fighting infections', 'Aiding in blood clotting', 'Producing hormones'],
+        correctAnswer: 'Fighting infections',
+        gradeLevel: 5,
+        hint: 'Health',
+      },
+      {
+        id: '163',
+        text: 'What are the main parts of a flower?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['Roots, stem, and leaves', 'Petals, stamen, and pistil', 'Bark, branches, and fruits', 'Chloroplast, xylem, and phloem'],
+        correctAnswer: 'Petals, stamen, and pistil',
+        gradeLevel: 5,
+        hint: 'Parts Of plants',
+      },
+      {
+        id: '164',
+        text: 'What causes a lunar eclipse?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['The Earth passes between the Sun and the Moon', 'The Moon passes between the Sun and the Earth', 'The Sun passes between the Earth and the Moon', 'Clouds block the Moon'],
+        correctAnswer: 'The Earth passes between the Sun and the Moon',
+        gradeLevel: 5,
+        hint: 'Shady',
+      },
+      {
+        id: '165',
+        text: 'How do vaccines work?',
+        category: 'Science',
+        type: 'multiple-choice',
+        options: ['By curing diseases directly', 'By providing the body with the antibodies to fight off the disease', 'By triggering an immune response, so the body can fight the real infection later', 'By providing temporary relief from symptoms'],
+        correctAnswer: 'By triggering an immune response, so the body can fight the real infection later',
+        gradeLevel: 5,
+        hint: 'Protecting',
+      },
+        {
+            id: '166',
+            text: 'What is the process called when a solid changes directly into a gas without becoming a liquid?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Melting', 'Evaporation', 'Sublimation', 'Condensation'],
+            correctAnswer: 'Sublimation',
+            gradeLevel: 5,
+            hint: 'Think of dry ice.',
+        },
+        {
+            id: '167',
+            text: 'Which force causes a ball to fall back to the ground when you throw it up in the air?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Friction', 'Gravity', 'Magnetism', 'Tension'],
+            correctAnswer: 'Gravity',
+            gradeLevel: 4,
+            hint: 'It’s the same force that keeps us on the Earth.',
+        },
+        {
+            id: '168',
+            text: 'What do you call an animal that eats both plants and other animals?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Herbivore', 'Carnivore', 'Omnivore', 'Insectivore'],
+            correctAnswer: 'Omnivore',
+            gradeLevel: 4,
+            hint: 'Think of bears or humans.',
+        },
+        {
+            id: '169',
+            text: 'What is the name of the organ that helps us breathe by taking in oxygen and releasing carbon dioxide?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Heart', 'Brain', 'Lungs', 'Stomach'],
+            correctAnswer: 'Lungs',
+            gradeLevel: 4,
+            hint: 'These fill with air when we breathe.',
+        },
+        {
+            id: '170',
+            text: 'Which of these is NOT a type of cloud?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Cirrus', 'Cumulus', 'Nimbus', 'Sandstorm'],
+            correctAnswer: 'Sandstorm',
+            gradeLevel: 4,
+            hint: 'This one is a weather event, not a cloud.',
+        },
+        {
+            id: '171',
+            text: 'What is the name of the process by which plants make their own food using sunlight?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Respiration', 'Photosynthesis', 'Transpiration', 'Digestion'],
+            correctAnswer: 'Photosynthesis',
+            gradeLevel: 5,
+            hint: 'It uses sunlight to make sugar.',
+        },
+        {
+            id: '172',
+            text: 'Which planet in our solar system is famous for its beautiful rings?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Jupiter', 'Saturn', 'Uranus', 'Neptune'],
+            correctAnswer: 'Saturn',
+            gradeLevel: 5,
+            hint: 'It’s the one that looks like it’s wearing jewelry.',
+        },
+        {
+            id: '173',
+            text: 'What is the name for the tiny particles that make up all matter?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Cells', 'Atoms', 'Molecules', 'Organelles'],
+            correctAnswer: 'Atoms',
+            gradeLevel: 5,
+            hint: 'They are the building blocks of everything.',
+        },
+        {
+            id: '174',
+            text: 'Which of the following is a renewable source of energy?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Coal', 'Oil', 'Wind', 'Natural Gas'],
+            correctAnswer: 'Wind',
+            gradeLevel: 5,
+            hint: 'It can be used again and again without running out.',
+        },
+        {
+            id: '175',
+            text: 'What gas do humans breathe out?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Oxygen', 'Nitrogen', 'Carbon Dioxide', 'Hydrogen'],
+            correctAnswer: 'Carbon Dioxide',
+            gradeLevel: 4,
+            hint: 'Plants use this gas to make food.',
+        },
+        {
+            id: '176',
+            text: 'What is the largest planet in our solar system?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Earth', 'Jupiter', 'Saturn', 'Mars'],
+            correctAnswer: 'Jupiter',
+            gradeLevel: 4,
+            hint: 'It’s so big, you could fit all the other planets inside it!',
+        },
+        {
+            id: '177',
+            text: 'Which part of a plant is responsible for reproduction?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Roots', 'Stem', 'Leaves', 'Flowers'],
+            correctAnswer: 'Flowers',
+            gradeLevel: 4,
+            hint: 'They often produce seeds.',
+        },
+        {
+            id: '178',
+            text: 'What is the name of the force that pulls objects towards the center of the Earth?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Magnetism', 'Gravity', 'Friction', 'Tension'],
+            correctAnswer: 'Gravity',
+            gradeLevel: 4,
+            hint: 'It’s why we don’t float off into space.',
+        },
+        {
+            id: '179',
+            text: 'Which animal lays eggs?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Cat', 'Dog', 'Bird', 'Cow'],
+            correctAnswer: 'Bird',
+            gradeLevel: 4,
+            hint: 'It builds a nest.',
+        },
+        {
+            id: '180',
+            text: 'What is the chemical symbol for water?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['CO2', 'H2O', 'NaCl', 'O2'],
+            correctAnswer: 'H2O',
+            gradeLevel: 4,
+            hint: 'It’s what we drink.',
+        },
+        {
+            id: '181',
+            text: 'What are the three states of matter?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Solid, liquid, gas', 'Earth, wind, fire', 'Rock, paper, scissors', 'Past, present, future'],
+            correctAnswer: 'Solid, liquid, gas',
+            gradeLevel: 4,
+            hint: 'Think of ice, water, and steam.',
+        },
+        {
+            id: '182',
+            text: 'What force must you overcome to move a heavy box across the floor?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Gravity', 'Tension', 'Magnetism', 'Friction'],
+            correctAnswer: 'Friction',
+            gradeLevel: 4,
+            hint: 'This force opposes motion.',
+        },
+        {
+            id: '183',
+            text: 'Animals which only eat meat are called what?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Herbivores', 'Omnivores', 'Carnivores', 'Producers'],
+            correctAnswer: 'Carnivores',
+            gradeLevel: 4,
+            hint: 'They love meat.',
+        },
+        {
+            id: '184',
+            text: 'The average adult human has how many bones?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['106', '206', '306', '406'],
+            correctAnswer: '206',
+            gradeLevel: 4,
+            hint: 'In the hundreds',
+        },
+        {
+            id: '185',
+            text: 'What is the name of the force that keeps you on the ground?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Tension', 'Magnetic', 'Gravity', 'Electrical'],
+            correctAnswer: 'Gravity',
+            gradeLevel: 4,
+            hint: 'Keeps you from floating away.',
+        },
+        {
+            id: '186',
+            text: 'Which is the closest star to the Earth?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['The Moon', 'The Sun', 'Venus', 'Sirius'],
+            correctAnswer: 'The Sun',
+            gradeLevel: 4,
+            hint: 'Gives the light in the day',
+        },
+        {
+            id: '187',
+            text: 'Water is at its densest at which of the following temperatures',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['0°C', '4°C', '10°C', '100°C'],
+            correctAnswer: '4°C',
+            gradeLevel: 5,
+            hint: 'Just above freezing.',
+        },
+        {
+            id: '188',
+            text: 'What is the most abundant gas in the Earth’s atmosphere?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Oxygen', 'Hydrogen', 'Carbon Dioxide', 'Nitrogen'],
+            correctAnswer: 'Nitrogen',
+            gradeLevel: 5,
+            hint: 'About 78% of the air we breathe.',
+        },
+        {
+            id: '189',
+            text: 'What process forms sedimentary rocks?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Melting', 'Cooling', 'Weathering and Erosion', 'Bioluminescence'],
+            correctAnswer: 'Weathering and Erosion',
+            gradeLevel: 5,
+            hint: 'Bits and pieces sticking together.',
+        },
+        {
+            id: '190',
+            text: 'Which of the following does not belong to the inner planets',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Mercury', 'Venus', 'Earth', 'Neptune'],
+            correctAnswer: 'Neptune',
+            gradeLevel: 5,
+            hint: 'Think gas giants versus terrestrial.',
+        },
+        {
+            id: '191',
+            text: 'What type of energy do plants use to make food?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Kinetic Energy', 'Potential Energy', 'Solar Energy', 'Wind Energy'],
+            correctAnswer: 'Solar Energy',
+            gradeLevel: 4,
+            hint: 'Comes from the Sun.',
+        },
+        {
+            id: '192',
+            text: 'What protects the Earth from the Sun’s harmful rays?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['The Water Cycle', 'The Ozone Layer', 'The Moon', 'The Crust'],
+            correctAnswer: 'The Ozone Layer',
+            gradeLevel: 5,
+            hint: 'Like sunscreen for the Earth.',
+        },
+        {
+            id: '193',
+            text: 'True or False: Light travels faster than sound',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['True', 'False'],
+            correctAnswer: 'True',
+            gradeLevel: 5,
+            hint: 'See lightning then hear thunder.',
+        },
+        {
+            id: '194',
+            text: 'What do we call the system in the human body that breaks down food?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Respiratory System', 'Digestive System', 'Circulatory System', 'Nervous System'],
+            correctAnswer: 'Digestive System',
+            gradeLevel: 4,
+            hint: 'Breaks down food',
+        },
+        {
+            id: '195',
+            text: 'Which of the following is a mammal?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Snake', 'Penguin', 'Butterfly', 'Dolphin'],
+            correctAnswer: 'Dolphin',
+            gradeLevel: 4,
+            hint: 'It lives in the water and is warm blooded.',
+        },
+        {
+            id: '196',
+            text: 'What is the Earth’s natural satellite called?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['Venus', 'Mars', 'The Sun', 'The Moon'],
+            correctAnswer: 'The Moon',
+            gradeLevel: 4,
+            hint: 'We can see it at night',
+        },
+        {
+            id: '197',
+            text: 'What is the first state of matter?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['water', 'ice', 'fire', 'air'],
+            correctAnswer: 'ice',
+            gradeLevel: 4,
+            hint: 'Matter',
+        },
+        {
+            id: '198',
+            text: 'The part of the plant which helps to make their own food',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['stem', 'leaves', 'roots', 'flowers'],
+            correctAnswer: 'leaves',
+            gradeLevel: 4,
+            hint: 'It makes the colour green',
+        },
+        {
+            id: '199',
+            text: 'Why the arctic animal needs to stay warm?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['keep warm', 'keep cold', 'swim', 'fly'],
+            correctAnswer: 'keep warm',
+            gradeLevel: 4,
+            hint: 'Very cold',
+        },
+        {
+            id: '200',
+            text: 'How does a rainbow happen',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['with water and light', 'heat and light', 'soil and light', 'water and darkness'],
+            correctAnswer: 'with water and light',
+            gradeLevel: 4,
+            hint: 'With Rain',
+        },
+        {
+            id: '201',
+            text: 'What will happen if it is a dark place in plant',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['grow', 'not grow', 'shine', 'more flower'],
+            correctAnswer: 'not grow',
+            gradeLevel: 4,
+            hint: 'It doesn\'t help',
+        },
+        {
+            id: '202',
+            text: 'Which animal can fly?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['cat', 'dog', 'bird', 'cow'],
+            correctAnswer: 'bird',
+            gradeLevel: 4,
+            hint: 'It flies away',
+        },
+        {
+            id: '203',
+            text: 'The earth is in a oval shape, what is the term that is called',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['circle', 'oval', 'sphere', 'elipse'],
+            correctAnswer: 'elipse',
+            gradeLevel: 5,
+            hint: 'It spins',
+        },
+        {
+            id: '204',
+            text: 'If the water goes down, it will form what? (flood, tide, lake, drought)',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['flood', 'tide', 'lake', 'drought'],
+            correctAnswer: 'drought',
+            gradeLevel: 5,
+            hint: 'Desperate time',
+        },
+        {
+            id: '205',
+            text: 'What has more chromosomes',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['rice', 'apple', 'human', 'ant'],
+            correctAnswer: 'rice',
+            gradeLevel: 5,
+            hint: 'Grain',
+        },
+        {
+            id: '206',
+            text: 'which organ belongs to the nervous system (brain, heart, kidney, lungs)',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['brain', 'heart', 'kidney', 'lungs'],
+            correctAnswer: 'brain',
+            gradeLevel: 5,
+            hint: 'Head.',
+        },
+        {
+            id: '207',
+            text: 'In order to maintain a healthy diet you need ',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['carbohydrates and some fats', 'proteins and carbohydrates', 'fat, carbohydrates and protein', 'minerals, vitamins, fiber, water, fats, carbohydrates and protein'],
+            correctAnswer: 'minerals, vitamins, fiber, water, fats, carbohydrates and protein',
+            gradeLevel: 5,
+            hint: 'Balance',
+        },
+        {
+            id: '208',
+            text: 'which is a common non-communicable disease? (flu, HIV, cancer, malaria)',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['flu', 'HIV', 'cancer', 'malaria'],
+            correctAnswer: 'cancer',
+            gradeLevel: 5,
+            hint: 'Body cell growing abnormal',
+        },
+        {
+            id: '209',
+            text: 'The process of pasteurizing the milk will do what',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['makes it more tasty', 'make it more creamy', 'to kill certain bacteria', 'to freeze them'],
+            correctAnswer: 'to kill certain bacteria',
+            gradeLevel: 5,
+            hint: 'Heating.',
+        },
+        {
+            id: '210',
+            text: 'If you are riding a bike on a cold night then your body needs what?',
+            category: 'Science',
+            type: 'multiple-choice',
+            options: ['more salt', 'less sugar', 'more oxygen', 'more energy'],
+            correctAnswer: 'more energy',
+            gradeLevel: 5,
+            hint: 'Power.',
+        },
     ],
   },
 ];
@@ -3197,3 +4325,5 @@ export default function Home() {
     </SidebarProvider>
   );
 }
+
+
